@@ -1,0 +1,3794 @@
+{
+  "schemaVersion" : 1,
+  "migration" : 1,
+  "id" : "be7bde7e-98c0-42c5-9f76-4200cf1c2849",
+  "specialLinks" : {
+    "SYSTEM_LANG_OBJECT" : "2cc70c4b-d7ab-4e25-9f97-ed1b5b9422d7",
+    "SYSTEM_LANG_KEY_DOMAIN" : "af03e72b-fbca-456c-b0d8-f34e00978176",
+    "COLUMN_LANG_ID" : "b5cd2054-bb57-4e7e-a66d-0bd4a39ab70b",
+    "COLUMN_LANG_NAME" : "96df3675-27be-479e-9721-2dc87e72a35b",
+    "SYSTEM_LANG_TABLE" : "ff1dc70c-01bc-4574-97e9-3d34ed085972",
+    "USER_OBJECT" : "79bfe1f3-f411-4e8f-a856-11fcf4faa96a",
+    "USER_TABLE" : "356cd18b-c872-4b73-ace2-a925ec1b33b7"
+  },
+  "dataSources" : {
+    "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+      "id" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+      "name" : "demo",
+      "majorVersion" : 17
+    },
+    "0e6b074a-daed-4814-b0cd-81687b286705" : {
+      "id" : "0e6b074a-daed-4814-b0cd-81687b286705",
+      "name" : "test_migration-1",
+      "note" : "string",
+      "type" : "Postgresql",
+      "minorVersion" : 1,
+      "schema" : "1.0"
+    }
+  },
+  "domains" : {
+    "8ed16506-a74c-4b05-934a-21d55ddee316" : {
+      "id" : "8ed16506-a74c-4b05-934a-21d55ddee316",
+      "name" : "SMALLINT",
+      "dataType" : "SMALLINT",
+      "visible" : true
+    },
+    "7e468de6-0e7d-4183-8da3-b656ac917fa8" : {
+      "id" : "7e468de6-0e7d-4183-8da3-b656ac917fa8",
+      "name" : "INTEGER",
+      "dataType" : "INTEGER",
+      "visible" : true
+    },
+    "269f6ebc-1fd0-4a8b-8437-27ad5380d7fc" : {
+      "id" : "269f6ebc-1fd0-4a8b-8437-27ad5380d7fc",
+      "name" : "SERIAL",
+      "dataType" : "INTEGER",
+      "defValue" : {
+        "type" : "SERIAL"
+      },
+      "visible" : true
+    },
+    "b7b1898e-bba5-439b-8d07-7e89205ae460" : {
+      "id" : "b7b1898e-bba5-439b-8d07-7e89205ae460",
+      "name" : "BIGINT",
+      "dataType" : "BIGINT",
+      "visible" : true
+    },
+    "1cdd8744-f119-457d-9b7e-1278064fea44" : {
+      "id" : "1cdd8744-f119-457d-9b7e-1278064fea44",
+      "name" : "BIGSERIAL",
+      "dataType" : "BIGINT",
+      "defValue" : {
+        "type" : "SERIAL"
+      },
+      "visible" : true
+    },
+    "b3992ca2-ba07-44e9-9eca-acba063855ee" : {
+      "id" : "b3992ca2-ba07-44e9-9eca-acba063855ee",
+      "name" : "DECIMAL",
+      "dataType" : "DECIMAL",
+      "visible" : true
+    },
+    "715eba66-66b5-4b0b-9668-9ca6f0be4004" : {
+      "id" : "715eba66-66b5-4b0b-9668-9ca6f0be4004",
+      "name" : "DOUBLE",
+      "dataType" : "DOUBLE",
+      "visible" : true
+    },
+    "4d239885-917c-48c5-9157-eede8e23d96a" : {
+      "id" : "4d239885-917c-48c5-9157-eede8e23d96a",
+      "name" : "BOOLEAN",
+      "dataType" : "BOOLEAN",
+      "visible" : true
+    },
+    "797d3d77-6221-4350-80fa-8010b991e1d1" : {
+      "id" : "797d3d77-6221-4350-80fa-8010b991e1d1",
+      "name" : "UUID",
+      "dataType" : "UUID",
+      "visible" : true
+    },
+    "4a5b6df8-0c8f-4998-baf4-eedba2e52b64" : {
+      "id" : "4a5b6df8-0c8f-4998-baf4-eedba2e52b64",
+      "name" : "UUIDKey",
+      "dataType" : "UUID",
+      "defValue" : {
+        "type" : "UUID"
+      },
+      "visible" : true
+    },
+    "5df27c95-f6d6-4ec0-b593-37fa6af6f59d" : {
+      "id" : "5df27c95-f6d6-4ec0-b593-37fa6af6f59d",
+      "name" : "TEXT",
+      "dataType" : "VARCHAR",
+      "visible" : true
+    },
+    "beab3693-cd32-42f7-98e7-cfc60998afa5" : {
+      "id" : "beab3693-cd32-42f7-98e7-cfc60998afa5",
+      "name" : "CHAR(1)",
+      "dataType" : "CHAR",
+      "size" : 1,
+      "visible" : true
+    },
+    "6626a499-e90c-47ac-8889-695d77338803" : {
+      "id" : "6626a499-e90c-47ac-8889-695d77338803",
+      "name" : "DATE",
+      "dataType" : "DATE",
+      "visible" : true
+    },
+    "ed06ba09-a09e-4a4b-b12d-f019d1916627" : {
+      "id" : "ed06ba09-a09e-4a4b-b12d-f019d1916627",
+      "name" : "TIMESTAMP",
+      "dataType" : "TIMESTAMP",
+      "size" : 0,
+      "visible" : true
+    },
+    "f7ca17a2-f974-4f11-a3ae-23e840ed6707" : {
+      "id" : "f7ca17a2-f974-4f11-a3ae-23e840ed6707",
+      "name" : "TIMESTAMP(1)",
+      "dataType" : "TIMESTAMP",
+      "size" : 1,
+      "visible" : true
+    },
+    "54d10bcb-f5e7-4a9c-9231-bef063eb2559" : {
+      "id" : "54d10bcb-f5e7-4a9c-9231-bef063eb2559",
+      "name" : "TIMESTAMP(2)",
+      "dataType" : "TIMESTAMP",
+      "size" : 2,
+      "visible" : true
+    },
+    "5c9c224f-b17b-4ac2-ae67-e0f3e3888ca6" : {
+      "id" : "5c9c224f-b17b-4ac2-ae67-e0f3e3888ca6",
+      "name" : "TIMESTAMP(3)",
+      "dataType" : "TIMESTAMP",
+      "size" : 3,
+      "visible" : true
+    },
+    "4c2e27ff-7424-43fa-bad7-843b594bbc0e" : {
+      "id" : "4c2e27ff-7424-43fa-bad7-843b594bbc0e",
+      "name" : "TIMESTAMP(4)",
+      "dataType" : "TIMESTAMP",
+      "size" : 4,
+      "visible" : true
+    },
+    "b35ea4aa-ac82-4f77-88b5-fbde89be7b1f" : {
+      "id" : "b35ea4aa-ac82-4f77-88b5-fbde89be7b1f",
+      "name" : "TIMESTAMP(5)",
+      "dataType" : "TIMESTAMP",
+      "size" : 5,
+      "visible" : true
+    },
+    "4a6ea286-049b-4b62-91e1-7d1a34697aba" : {
+      "id" : "4a6ea286-049b-4b62-91e1-7d1a34697aba",
+      "name" : "TIMESTAMP(6)",
+      "dataType" : "TIMESTAMP",
+      "size" : 6,
+      "visible" : true
+    },
+    "af03e72b-fbca-456c-b0d8-f34e00978176" : {
+      "id" : "af03e72b-fbca-456c-b0d8-f34e00978176",
+      "name" : "LangKey",
+      "dataType" : "CHAR",
+      "size" : 2,
+      "visible" : true
+    },
+    "0f8e243a-bc8d-4b12-85da-8128eec6b9a1" : {
+      "id" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+      "name" : "ACCNAME",
+      "colName" : "name",
+      "note" : "Наименование",
+      "dataType" : "VARCHAR",
+      "visible" : true
+    },
+    "adce9dd5-1bab-41a0-b2f1-a0aa9c40753b" : {
+      "id" : "adce9dd5-1bab-41a0-b2f1-a0aa9c40753b",
+      "name" : "AMOUNT",
+      "colName" : "hsl",
+      "note" : "Сумма",
+      "dataType" : "DECIMAL",
+      "size" : 23,
+      "scale" : 2,
+      "visible" : true
+    },
+    "ae8f7d28-eb7c-40ab-be12-9118281006bd" : {
+      "id" : "ae8f7d28-eb7c-40ab-be12-9118281006bd",
+      "name" : "DOCSUM",
+      "note" : "Сумма документа",
+      "dataType" : "DECIMAL",
+      "size" : 13,
+      "scale" : 2,
+      "visible" : true
+    },
+    "2f0f7147-f0be-4cb3-bca0-c0d6a7b2ee25" : {
+      "id" : "2f0f7147-f0be-4cb3-bca0-c0d6a7b2ee25",
+      "name" : "SYMDATE",
+      "note" : "Дата",
+      "dataType" : "CHAR",
+      "size" : 8,
+      "visible" : true
+    },
+    "94ae5f30-0f84-4577-b64e-54059668c2ab" : {
+      "id" : "94ae5f30-0f84-4577-b64e-54059668c2ab",
+      "name" : "SYMYEAR",
+      "colName" : "gjahr",
+      "note" : "Год",
+      "dataType" : "CHAR",
+      "size" : 4,
+      "visible" : true
+    },
+    "69efd89f-2fed-469b-8ec2-26fdf834173d" : {
+      "id" : "69efd89f-2fed-469b-8ec2-26fdf834173d",
+      "name" : "BELNR",
+      "colName" : "belnr",
+      "note" : "Номер документа",
+      "dataType" : "CHAR",
+      "size" : 10,
+      "visible" : true
+    },
+    "44789d96-c654-4481-a7da-2e3dbedf6b75" : {
+      "id" : "44789d96-c654-4481-a7da-2e3dbedf6b75",
+      "name" : "DOCLND",
+      "colName" : "doclnd",
+      "note" : "Строка проводки по регистру",
+      "dataType" : "CHAR",
+      "size" : 6,
+      "visible" : true
+    },
+    "1be01674-5c66-4384-b5d9-d363656b052f" : {
+      "id" : "1be01674-5c66-4384-b5d9-d363656b052f",
+      "name" : "BUDAT",
+      "colName" : "budat",
+      "note" : "Дата документа",
+      "dataType" : "CHAR",
+      "size" : 8,
+      "visible" : true
+    },
+    "34e6c37f-74ac-44f1-b2bb-d65f53f72a48" : {
+      "id" : "34e6c37f-74ac-44f1-b2bb-d65f53f72a48",
+      "name" : "CUR",
+      "colName" : "cur",
+      "note" : "Код валюты",
+      "dataType" : "CHAR",
+      "size" : 5,
+      "visible" : true,
+      "refTabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+      "refTabKey" : "d4f0380f-d2f7-45cc-8aa2-0382fc48912e"
+    },
+    "dfdd0c20-8113-45f8-a93b-d7dae15a8fa2" : {
+      "id" : "dfdd0c20-8113-45f8-a93b-d7dae15a8fa2",
+      "name" : "PACC",
+      "colName" : "pacc",
+      "note" : "Код плана счетов",
+      "dataType" : "CHAR",
+      "size" : 4,
+      "visible" : true,
+      "refTabId" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+      "refTabKey" : "5c9e1485-8b3c-49e9-aa4e-4147683a32e3"
+    },
+    "f696324f-9e19-4577-99db-f6acbbeb3f43" : {
+      "id" : "f696324f-9e19-4577-99db-f6acbbeb3f43",
+      "name" : "BALUNIT",
+      "colName" : "bukrs",
+      "note" : "Код балансовой единицы",
+      "dataType" : "CHAR",
+      "size" : 4,
+      "visible" : true,
+      "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+      "refTabKey" : "652dd9aa-1b46-44ed-bf1a-f05a8d521f78"
+    },
+    "301f3bd3-f553-496a-865e-fe0ee438084e" : {
+      "id" : "301f3bd3-f553-496a-865e-fe0ee438084e",
+      "name" : "ACCOUNT",
+      "colName" : "racct",
+      "note" : "Код счета",
+      "dataType" : "CHAR",
+      "size" : 10,
+      "visible" : true,
+      "refTabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+      "refTabKey" : "44994d7a-5539-429d-a6ff-2688b8262653"
+    },
+    "eaa85b74-7139-4a15-8512-363dfc70f7b8" : {
+      "id" : "eaa85b74-7139-4a15-8512-363dfc70f7b8",
+      "name" : "DKIND",
+      "colName" : "blart",
+      "note" : "Код вида документа",
+      "dataType" : "CHAR",
+      "size" : 2,
+      "visible" : true,
+      "refTabId" : "a695d592-564d-4d78-90e3-d61c5b60981a",
+      "refTabKey" : "59ce2ddc-c2f0-4141-b0f1-d7ffedb275e4"
+    },
+    "2ea85d48-5596-4569-9070-47c6925025fb" : {
+      "id" : "2ea85d48-5596-4569-9070-47c6925025fb",
+      "name" : "VPTNR",
+      "colName" : "vptnr",
+      "note" : "Код контрагента",
+      "dataType" : "CHAR",
+      "size" : 10,
+      "visible" : true,
+      "refTabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+      "refTabKey" : "054b2804-2af6-419c-8927-3fa131628068"
+    },
+    "96db78c6-29dd-49cc-aef3-2d4e9b94a008" : {
+      "id" : "96db78c6-29dd-49cc-aef3-2d4e9b94a008",
+      "name" : "ZUONR",
+      "colName" : "zuonr",
+      "note" : "Код договора",
+      "dataType" : "CHAR",
+      "size" : 18,
+      "visible" : true,
+      "refTabId" : "5f863b91-514d-495e-8fb2-430326799473",
+      "refTabKey" : "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9"
+    },
+    "2003b72b-ea8f-4881-ab4f-0d4a907b88e0" : {
+      "id" : "2003b72b-ea8f-4881-ab4f-0d4a907b88e0",
+      "name" : "ZVAT_RATE",
+      "colName" : "zvat_rate",
+      "note" : "Код ставки НДС",
+      "dataType" : "CHAR",
+      "size" : 2,
+      "visible" : true,
+      "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+      "refTabKey" : "d913bcca-440f-401b-a4e4-94d29230f97b"
+    },
+    "b6d325b2-2ace-4fa1-bdc9-655de345e332" : {
+      "id" : "b6d325b2-2ace-4fa1-bdc9-655de345e332",
+      "name" : "MWSKZ",
+      "colName" : "mwskz",
+      "note" : "Код налога",
+      "dataType" : "CHAR",
+      "size" : 2,
+      "visible" : true,
+      "refTabId" : "6faa098f-e3d0-467d-ad49-b755f483e099",
+      "refTabKey" : "80ab5150-5ae4-4c78-a51e-0f33b87d0eb8"
+    },
+    "65197d49-9508-4d28-9850-d56bc534438a" : {
+      "id" : "65197d49-9508-4d28-9850-d56bc534438a",
+      "name" : "FISTL",
+      "colName" : "fistl",
+      "note" : "Код ПФМ",
+      "dataType" : "VARCHAR",
+      "size" : 16,
+      "visible" : true,
+      "refTabId" : "dd6733e3-a69a-4900-ad41-d829f5c9b4f1",
+      "refTabKey" : "b05dec2a-394f-4f60-8e67-d8b277b71ffd"
+    },
+    "b39de70c-eefd-4159-a8df-8969ab2fcd5e" : {
+      "id" : "b39de70c-eefd-4159-a8df-8969ab2fcd5e",
+      "name" : "FIPOS",
+      "colName" : "fipos",
+      "note" : "Код финансовой позиции",
+      "dataType" : "VARCHAR",
+      "size" : 14,
+      "visible" : true,
+      "refTabId" : "616f4c5e-43d2-4e22-a4b4-64172a5bfa97",
+      "refTabKey" : "4e532ca1-d54e-46d3-bff8-aa890154fb6f"
+    },
+    "0c58f156-73a2-4c34-8333-c758f97ec8fd" : {
+      "id" : "0c58f156-73a2-4c34-8333-c758f97ec8fd",
+      "name" : "KOSTL",
+      "colName" : "kostl",
+      "note" : "Код объекта учета затрат (ОУЗ)",
+      "dataType" : "CHAR",
+      "size" : 10,
+      "visible" : true,
+      "refTabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+      "refTabKey" : "11c64595-4734-44b4-8967-444d3b05e723"
+    },
+    "bfef9824-193e-410e-8485-2e2083b4ab0d" : {
+      "id" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+      "name" : "ZFI_CF015",
+      "colName" : "zfi_cf015",
+      "note" : "Код вида деятельности",
+      "dataType" : "CHAR",
+      "size" : 2,
+      "visible" : true,
+      "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+      "refTabKey" : "b81e2676-b317-4415-988a-5a7f11d1fcae"
+    },
+    "00f52444-280e-4664-8eb1-cef347296c75" : {
+      "id" : "00f52444-280e-4664-8eb1-cef347296c75",
+      "name" : "REG",
+      "colName" : "rldnr",
+      "note" : "Код регистра",
+      "dataType" : "CHAR",
+      "size" : 2,
+      "visible" : true,
+      "refTabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+      "refTabKey" : "753798d9-45df-483b-ba34-b35c522d9c48"
+    },
+    "1940c283-9685-42e4-b622-cf6be84fb4da" : {
+      "id" : "1940c283-9685-42e4-b622-cf6be84fb4da",
+      "name" : "GREG",
+      "colName" : "ldgrp",
+      "note" : "Код группы регистров",
+      "dataType" : "CHAR",
+      "size" : 4,
+      "visible" : true,
+      "refTabId" : "1af1ffa6-b6bf-4ced-a61d-5c16d9603e3d",
+      "refTabKey" : "6bfc34f2-344e-4689-8dad-de42a2a861bb"
+    },
+    "4c08860e-6b96-49b4-9281-b202cfdde0a8" : {
+      "id" : "4c08860e-6b96-49b4-9281-b202cfdde0a8",
+      "name" : "EKIND",
+      "colName" : "drcrk",
+      "note" : "Дебет / Кредит",
+      "dataType" : "CHAR",
+      "size" : 1,
+      "visible" : true,
+      "refTabId" : "04078bf3-d199-4dd9-906e-704d101a1b48",
+      "refTabKey" : "6aaf4a59-7124-4ce3-86ea-d479fa8c3475"
+    },
+    "99e0ba9f-edad-48d4-8011-2128d9b5e6b4" : {
+      "id" : "99e0ba9f-edad-48d4-8011-2128d9b5e6b4",
+      "name" : "BUZEI",
+      "colName" : "buzei",
+      "note" : "Номер отдельной позиции",
+      "dataType" : "CHAR",
+      "size" : 3,
+      "visible" : true
+    },
+    "1e15be45-583c-4a4d-9506-85349230f723" : {
+      "id" : "1e15be45-583c-4a4d-9506-85349230f723",
+      "name" : "ADDD3",
+      "colName" : "addd",
+      "note" : "Номер позиции для новых позиций (дебет)",
+      "dataType" : "CHAR",
+      "size" : 3,
+      "visible" : true
+    },
+    "fc25a840-85ae-4e23-8f28-cc4aa3eb0922" : {
+      "id" : "fc25a840-85ae-4e23-8f28-cc4aa3eb0922",
+      "name" : "ADDK3",
+      "colName" : "addk",
+      "note" : "Номер позиции для новых позиций (кредит)",
+      "dataType" : "CHAR",
+      "size" : 3,
+      "visible" : true
+    },
+    "1f1b8a03-07f2-4cc6-b9c5-144608d9e3fd" : {
+      "id" : "1f1b8a03-07f2-4cc6-b9c5-144608d9e3fd",
+      "name" : "NPDDI9",
+      "colName" : "npddi",
+      "note" : "Номер позиции из разделенной статьи (дебет)",
+      "dataType" : "CHAR",
+      "size" : 9,
+      "visible" : true
+    },
+    "3695ed93-e64d-4daa-b47c-45ac1bd77eed" : {
+      "id" : "3695ed93-e64d-4daa-b47c-45ac1bd77eed",
+      "name" : "NPDKI9",
+      "colName" : "npdki",
+      "note" : "Номер позиции из разделенной статьи (кредит)",
+      "dataType" : "CHAR",
+      "size" : 9,
+      "visible" : true
+    },
+    "b4cdcaf2-73c1-4a95-9158-9537df4d286b" : {
+      "id" : "b4cdcaf2-73c1-4a95-9158-9537df4d286b",
+      "name" : "XNEGPD1",
+      "colName" : "xnegpd",
+      "note" : "Индикатор: красное сторно",
+      "dataType" : "CHAR",
+      "size" : 1,
+      "visible" : true
+    },
+    "7008e7d9-d99a-45c3-9aed-609d625d792c" : {
+      "id" : "7008e7d9-d99a-45c3-9aed-609d625d792c",
+      "name" : "XNEGPK1",
+      "colName" : "xnegpk",
+      "note" : "Индикатор: красное сторно",
+      "dataType" : "CHAR",
+      "size" : 1,
+      "visible" : true
+    }
+  },
+  "businessObjects" : {
+    "2cc70c4b-d7ab-4e25-9f97-ed1b5b9422d7" : {
+      "id" : "2cc70c4b-d7ab-4e25-9f97-ed1b5b9422d7",
+      "name" : "SystemLang",
+      "note" : "Системные языки",
+      "structures" : {
+        "ce055669-0bd0-437c-ad86-84f5858d6ea8" : {
+          "id" : "ce055669-0bd0-437c-ad86-84f5858d6ea8",
+          "boId" : "2cc70c4b-d7ab-4e25-9f97-ed1b5b9422d7",
+          "name" : "SystemLang",
+          "tables" : {
+            "ff1dc70c-01bc-4574-97e9-3d34ed085972" : {
+              "id" : "ff1dc70c-01bc-4574-97e9-3d34ed085972",
+              "structureId" : "ce055669-0bd0-437c-ad86-84f5858d6ea8",
+              "boId" : "2cc70c4b-d7ab-4e25-9f97-ed1b5b9422d7",
+              "name" : "system_lang",
+              "note" : "Системные языки",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "system_lang_pkey",
+                "columns" : [ "b5cd2054-bb57-4e7e-a66d-0bd4a39ab70b" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "b5cd2054-bb57-4e7e-a66d-0bd4a39ab70b" : {
+                  "id" : "b5cd2054-bb57-4e7e-a66d-0bd4a39ab70b",
+                  "tabId" : "ff1dc70c-01bc-4574-97e9-3d34ed085972",
+                  "num" : 1,
+                  "note" : "Ключ",
+                  "name" : "id",
+                  "domainId" : "af03e72b-fbca-456c-b0d8-f34e00978176",
+                  "visible" : true
+                },
+                "96df3675-27be-479e-9721-2dc87e72a35b" : {
+                  "id" : "96df3675-27be-479e-9721-2dc87e72a35b",
+                  "tabId" : "ff1dc70c-01bc-4574-97e9-3d34ed085972",
+                  "num" : 2,
+                  "note" : "Имя",
+                  "name" : "name",
+                  "domainId" : "5df27c95-f6d6-4ec0-b593-37fa6af6f59d",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "79bfe1f3-f411-4e8f-a856-11fcf4faa96a" : {
+      "id" : "79bfe1f3-f411-4e8f-a856-11fcf4faa96a",
+      "name" : "User",
+      "note" : "Пользователи",
+      "structures" : {
+        "3630e736-e41c-4368-95a9-6f813b5053ec" : {
+          "id" : "3630e736-e41c-4368-95a9-6f813b5053ec",
+          "boId" : "79bfe1f3-f411-4e8f-a856-11fcf4faa96a",
+          "name" : "User",
+          "tables" : {
+            "356cd18b-c872-4b73-ace2-a925ec1b33b7" : {
+              "id" : "356cd18b-c872-4b73-ace2-a925ec1b33b7",
+              "structureId" : "3630e736-e41c-4368-95a9-6f813b5053ec",
+              "boId" : "79bfe1f3-f411-4e8f-a856-11fcf4faa96a",
+              "name" : "user",
+              "note" : "Пользователи",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "user_pkey",
+                "columns" : [ "3ab23f79-e2d7-4a1e-a14f-2240e936c3d5" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "3ab23f79-e2d7-4a1e-a14f-2240e936c3d5" : {
+                  "id" : "3ab23f79-e2d7-4a1e-a14f-2240e936c3d5",
+                  "tabId" : "356cd18b-c872-4b73-ace2-a925ec1b33b7",
+                  "num" : 1,
+                  "note" : "Ключ",
+                  "name" : "id",
+                  "domainId" : "7e468de6-0e7d-4183-8da3-b656ac917fa8",
+                  "visible" : true
+                },
+                "b0fd1e3b-afe0-4129-85b8-d7bd4c25418a" : {
+                  "id" : "b0fd1e3b-afe0-4129-85b8-d7bd4c25418a",
+                  "tabId" : "356cd18b-c872-4b73-ace2-a925ec1b33b7",
+                  "num" : 2,
+                  "note" : "Имя бизнес объекта",
+                  "name" : "name",
+                  "domainId" : "5df27c95-f6d6-4ec0-b593-37fa6af6f59d",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "79bfe1f3-f411-4e8f-a856-11fcf4faa96a",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "9908eb5e-74ae-4a49-a1ae-658d8e3f0d55" : {
+      "id" : "9908eb5e-74ae-4a49-a1ae-658d8e3f0d55",
+      "name" : "Currency",
+      "note" : "Валюта",
+      "structures" : {
+        "2d59e59e-4dd2-42da-9c58-2a1da5877d10" : {
+          "id" : "2d59e59e-4dd2-42da-9c58-2a1da5877d10",
+          "boId" : "9908eb5e-74ae-4a49-a1ae-658d8e3f0d55",
+          "name" : "Currency",
+          "tables" : {
+            "81f97a69-a7a7-4718-b758-7710226335df" : {
+              "id" : "81f97a69-a7a7-4718-b758-7710226335df",
+              "structureId" : "2d59e59e-4dd2-42da-9c58-2a1da5877d10",
+              "boId" : "9908eb5e-74ae-4a49-a1ae-658d8e3f0d55",
+              "name" : "currency",
+              "note" : "Валюта",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "currency_pkey",
+                "columns" : [ "d4f0380f-d2f7-45cc-8aa2-0382fc48912e" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "d4f0380f-d2f7-45cc-8aa2-0382fc48912e" : {
+                  "id" : "d4f0380f-d2f7-45cc-8aa2-0382fc48912e",
+                  "tabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "num" : 1,
+                  "note" : "Код валюты",
+                  "name" : "cur",
+                  "domainId" : "34e6c37f-74ac-44f1-b2bb-d65f53f72a48",
+                  "visible" : true
+                },
+                "6feab1e8-2b00-4112-8f17-ff8e289f79be" : {
+                  "id" : "6feab1e8-2b00-4112-8f17-ff8e289f79be",
+                  "tabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "9908eb5e-74ae-4a49-a1ae-658d8e3f0d55",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "ed034d62-7531-4de5-b9a1-88e43183aee3" : {
+      "id" : "ed034d62-7531-4de5-b9a1-88e43183aee3",
+      "name" : "AccountPlan",
+      "note" : "План счетов",
+      "structures" : {
+        "b9a33e27-2a68-461f-8f52-187f74db25aa" : {
+          "id" : "b9a33e27-2a68-461f-8f52-187f74db25aa",
+          "boId" : "ed034d62-7531-4de5-b9a1-88e43183aee3",
+          "name" : "AccountPlan",
+          "tables" : {
+            "e143a82b-d6b6-440f-899f-ef6a558708a5" : {
+              "id" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+              "structureId" : "b9a33e27-2a68-461f-8f52-187f74db25aa",
+              "boId" : "ed034d62-7531-4de5-b9a1-88e43183aee3",
+              "name" : "account_plan",
+              "note" : "План счетов",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "account_plan_pkey",
+                "columns" : [ "5c9e1485-8b3c-49e9-aa4e-4147683a32e3" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "5c9e1485-8b3c-49e9-aa4e-4147683a32e3" : {
+                  "id" : "5c9e1485-8b3c-49e9-aa4e-4147683a32e3",
+                  "tabId" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+                  "num" : 1,
+                  "note" : "Код плана счетов",
+                  "name" : "pacc",
+                  "domainId" : "dfdd0c20-8113-45f8-a93b-d7dae15a8fa2",
+                  "visible" : true
+                },
+                "6b86e453-0f9e-4b02-8446-691a87c79271" : {
+                  "id" : "6b86e453-0f9e-4b02-8446-691a87c79271",
+                  "tabId" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              },
+              "data" : {
+                "882beba2-d873-4906-ba98-312855482d75" : {
+                  "5c9e1485-8b3c-49e9-aa4e-4147683a32e3" : "UTRU",
+                  "6b86e453-0f9e-4b02-8446-691a87c79271" : "ПАО ЮТэйр"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "ed034d62-7531-4de5-b9a1-88e43183aee3",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "9da6bd8a-f2c7-46c2-b948-1e992ddf4a13" : {
+      "id" : "9da6bd8a-f2c7-46c2-b948-1e992ddf4a13",
+      "name" : "BalanceUnit",
+      "note" : "Балансовая единица",
+      "structures" : {
+        "44ff4286-2522-4122-b3b1-a1312da29d0a" : {
+          "id" : "44ff4286-2522-4122-b3b1-a1312da29d0a",
+          "boId" : "9da6bd8a-f2c7-46c2-b948-1e992ddf4a13",
+          "name" : "BalanceUnit",
+          "tables" : {
+            "4ad0e467-530a-421d-b947-a88072deaf5c" : {
+              "id" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+              "structureId" : "44ff4286-2522-4122-b3b1-a1312da29d0a",
+              "boId" : "9da6bd8a-f2c7-46c2-b948-1e992ddf4a13",
+              "name" : "balance_unit",
+              "note" : "Балансовая единица",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "balance_unit_pkey",
+                "columns" : [ "652dd9aa-1b46-44ed-bf1a-f05a8d521f78" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "652dd9aa-1b46-44ed-bf1a-f05a8d521f78" : {
+                  "id" : "652dd9aa-1b46-44ed-bf1a-f05a8d521f78",
+                  "tabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "num" : 1,
+                  "note" : "Код балансовой единицы",
+                  "name" : "bukrs",
+                  "domainId" : "f696324f-9e19-4577-99db-f6acbbeb3f43",
+                  "visible" : true
+                },
+                "11d3beb5-4538-48a6-8e0a-3f54dc9f2d9a" : {
+                  "id" : "11d3beb5-4538-48a6-8e0a-3f54dc9f2d9a",
+                  "tabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                },
+                "796c087b-efec-4af8-a983-d38f9932efd6" : {
+                  "id" : "796c087b-efec-4af8-a983-d38f9932efd6",
+                  "tabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "num" : 3,
+                  "note" : "Код плана счетов",
+                  "name" : "pacc",
+                  "domainId" : "dfdd0c20-8113-45f8-a93b-d7dae15a8fa2",
+                  "visible" : true,
+                  "refTabId" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+                  "refTabKey" : "5c9e1485-8b3c-49e9-aa4e-4147683a32e3"
+                },
+                "cbcc246f-0f58-4bc7-912b-dbd77afd1090" : {
+                  "id" : "cbcc246f-0f58-4bc7-912b-dbd77afd1090",
+                  "tabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "num" : 4,
+                  "note" : "Код валюты",
+                  "name" : "cur",
+                  "domainId" : "34e6c37f-74ac-44f1-b2bb-d65f53f72a48",
+                  "visible" : true,
+                  "refTabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "refTabKey" : "d4f0380f-d2f7-45cc-8aa2-0382fc48912e"
+                }
+              },
+              "foreignKeys" : {
+                "bb92f454-78a5-45d1-b381-3af7058f1a5a" : {
+                  "id" : "bb92f454-78a5-45d1-b381-3af7058f1a5a",
+                  "tabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "name" : "balance_unit_pacc_fkey",
+                  "columns" : [ "796c087b-efec-4af8-a983-d38f9932efd6" ],
+                  "refTabId" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+                  "refColumns" : [ "5c9e1485-8b3c-49e9-aa4e-4147683a32e3" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "1aa58382-9b5a-4dc5-9f3e-05d1c588ce3d" : {
+                  "id" : "1aa58382-9b5a-4dc5-9f3e-05d1c588ce3d",
+                  "tabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "name" : "balance_unit_cur_fkey",
+                  "columns" : [ "cbcc246f-0f58-4bc7-912b-dbd77afd1090" ],
+                  "refTabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "refColumns" : [ "d4f0380f-d2f7-45cc-8aa2-0382fc48912e" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "9da6bd8a-f2c7-46c2-b948-1e992ddf4a13",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "dc48fac8-a19a-4494-a537-a0745bc4e6d7" : {
+      "id" : "dc48fac8-a19a-4494-a537-a0745bc4e6d7",
+      "name" : "Account",
+      "note" : "Счет",
+      "structures" : {
+        "c9364fbf-1bc4-4853-aa26-47554971b095" : {
+          "id" : "c9364fbf-1bc4-4853-aa26-47554971b095",
+          "boId" : "dc48fac8-a19a-4494-a537-a0745bc4e6d7",
+          "name" : "Account",
+          "tables" : {
+            "22326c5f-a2b5-45c7-bb91-1af61b1540b8" : {
+              "id" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+              "structureId" : "c9364fbf-1bc4-4853-aa26-47554971b095",
+              "boId" : "dc48fac8-a19a-4494-a537-a0745bc4e6d7",
+              "name" : "account",
+              "note" : "Счет",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "account_pkey",
+                "columns" : [ "44994d7a-5539-429d-a6ff-2688b8262653" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "44994d7a-5539-429d-a6ff-2688b8262653" : {
+                  "id" : "44994d7a-5539-429d-a6ff-2688b8262653",
+                  "tabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "num" : 1,
+                  "note" : "Код счета",
+                  "name" : "racct",
+                  "domainId" : "301f3bd3-f553-496a-865e-fe0ee438084e",
+                  "visible" : true
+                },
+                "3181018e-1b51-49b7-a305-9ed1043d582a" : {
+                  "id" : "3181018e-1b51-49b7-a305-9ed1043d582a",
+                  "tabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                },
+                "28d5f6be-42cd-4336-a20d-d4cffddf8024" : {
+                  "id" : "28d5f6be-42cd-4336-a20d-d4cffddf8024",
+                  "tabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "num" : 3,
+                  "note" : "Бизнес объект",
+                  "name" : "boname",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "dc48fac8-a19a-4494-a537-a0745bc4e6d7",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "21e20a6d-c3d8-4d19-9004-cd103b8e9a5f" : {
+      "id" : "21e20a6d-c3d8-4d19-9004-cd103b8e9a5f",
+      "name" : "MapAccplan",
+      "note" : "Мэппинг счета и плана счетов",
+      "structures" : {
+        "17179d01-5800-46b8-8486-6e8349c5347e" : {
+          "id" : "17179d01-5800-46b8-8486-6e8349c5347e",
+          "boId" : "21e20a6d-c3d8-4d19-9004-cd103b8e9a5f",
+          "name" : "MapAccplan",
+          "tables" : {
+            "21ff4aa2-1e91-4a41-a0da-5ab2b50e1c54" : {
+              "id" : "21ff4aa2-1e91-4a41-a0da-5ab2b50e1c54",
+              "structureId" : "17179d01-5800-46b8-8486-6e8349c5347e",
+              "boId" : "21e20a6d-c3d8-4d19-9004-cd103b8e9a5f",
+              "name" : "map_accplan",
+              "note" : "Мэппинг счета и плана счетов",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "map_accplan_pkey",
+                "columns" : [ "c09477b7-0434-4e4a-b11d-377800f58ed4", "e6d979a3-111b-4b5e-86e2-61854881ddc9" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "c09477b7-0434-4e4a-b11d-377800f58ed4" : {
+                  "id" : "c09477b7-0434-4e4a-b11d-377800f58ed4",
+                  "tabId" : "21ff4aa2-1e91-4a41-a0da-5ab2b50e1c54",
+                  "num" : 1,
+                  "note" : "Код плана счетов",
+                  "name" : "pacc",
+                  "domainId" : "dfdd0c20-8113-45f8-a93b-d7dae15a8fa2",
+                  "visible" : true,
+                  "refTabId" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+                  "refTabKey" : "5c9e1485-8b3c-49e9-aa4e-4147683a32e3"
+                },
+                "e6d979a3-111b-4b5e-86e2-61854881ddc9" : {
+                  "id" : "e6d979a3-111b-4b5e-86e2-61854881ddc9",
+                  "tabId" : "21ff4aa2-1e91-4a41-a0da-5ab2b50e1c54",
+                  "num" : 2,
+                  "note" : "Код счета",
+                  "name" : "racct",
+                  "domainId" : "301f3bd3-f553-496a-865e-fe0ee438084e",
+                  "visible" : true,
+                  "refTabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "refTabKey" : "44994d7a-5539-429d-a6ff-2688b8262653"
+                }
+              },
+              "foreignKeys" : {
+                "4986cecf-2876-4742-91be-6fcffb4c23cb" : {
+                  "id" : "4986cecf-2876-4742-91be-6fcffb4c23cb",
+                  "tabId" : "21ff4aa2-1e91-4a41-a0da-5ab2b50e1c54",
+                  "name" : "map_accplan_pacc_fkey",
+                  "columns" : [ "c09477b7-0434-4e4a-b11d-377800f58ed4" ],
+                  "refTabId" : "e143a82b-d6b6-440f-899f-ef6a558708a5",
+                  "refColumns" : [ "5c9e1485-8b3c-49e9-aa4e-4147683a32e3" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "9271f130-6285-493d-a527-927d442f37e4" : {
+                  "id" : "9271f130-6285-493d-a527-927d442f37e4",
+                  "tabId" : "21ff4aa2-1e91-4a41-a0da-5ab2b50e1c54",
+                  "name" : "map_accplan_racct_fkey",
+                  "columns" : [ "e6d979a3-111b-4b5e-86e2-61854881ddc9" ],
+                  "refTabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "refColumns" : [ "44994d7a-5539-429d-a6ff-2688b8262653" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "21e20a6d-c3d8-4d19-9004-cd103b8e9a5f",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "8c9df262-8b0c-4f2e-846a-45ccb3e181a6" : {
+      "id" : "8c9df262-8b0c-4f2e-846a-45ccb3e181a6",
+      "name" : "DocKind",
+      "note" : "Вид документа",
+      "structures" : {
+        "b10f49ce-71d2-4bbe-98ad-ea0c6ad7c723" : {
+          "id" : "b10f49ce-71d2-4bbe-98ad-ea0c6ad7c723",
+          "boId" : "8c9df262-8b0c-4f2e-846a-45ccb3e181a6",
+          "name" : "DocKind",
+          "tables" : {
+            "a695d592-564d-4d78-90e3-d61c5b60981a" : {
+              "id" : "a695d592-564d-4d78-90e3-d61c5b60981a",
+              "structureId" : "b10f49ce-71d2-4bbe-98ad-ea0c6ad7c723",
+              "boId" : "8c9df262-8b0c-4f2e-846a-45ccb3e181a6",
+              "name" : "doc_kind",
+              "note" : "Вид документа",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "doc_kind_pkey",
+                "columns" : [ "59ce2ddc-c2f0-4141-b0f1-d7ffedb275e4" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "59ce2ddc-c2f0-4141-b0f1-d7ffedb275e4" : {
+                  "id" : "59ce2ddc-c2f0-4141-b0f1-d7ffedb275e4",
+                  "tabId" : "a695d592-564d-4d78-90e3-d61c5b60981a",
+                  "num" : 1,
+                  "note" : "Код вида документа",
+                  "name" : "blart",
+                  "domainId" : "eaa85b74-7139-4a15-8512-363dfc70f7b8",
+                  "visible" : true
+                },
+                "80c39f39-f9e4-495f-af2a-bf5945d9402b" : {
+                  "id" : "80c39f39-f9e4-495f-af2a-bf5945d9402b",
+                  "tabId" : "a695d592-564d-4d78-90e3-d61c5b60981a",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "8c9df262-8b0c-4f2e-846a-45ccb3e181a6",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "1f5e7807-b370-453c-9010-2500e7da79d3" : {
+      "id" : "1f5e7807-b370-453c-9010-2500e7da79d3",
+      "name" : "Partner",
+      "note" : "Контрагент",
+      "structures" : {
+        "85e40468-81e6-4e6b-8e40-e545b5f43223" : {
+          "id" : "85e40468-81e6-4e6b-8e40-e545b5f43223",
+          "boId" : "1f5e7807-b370-453c-9010-2500e7da79d3",
+          "name" : "Partner",
+          "tables" : {
+            "05e274af-8d70-4e3e-89c7-ee56b55d5ae2" : {
+              "id" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+              "structureId" : "85e40468-81e6-4e6b-8e40-e545b5f43223",
+              "boId" : "1f5e7807-b370-453c-9010-2500e7da79d3",
+              "name" : "partner",
+              "note" : "Контрагент",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "partner_pkey",
+                "columns" : [ "054b2804-2af6-419c-8927-3fa131628068" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "054b2804-2af6-419c-8927-3fa131628068" : {
+                  "id" : "054b2804-2af6-419c-8927-3fa131628068",
+                  "tabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "num" : 1,
+                  "note" : "Код контрагента",
+                  "name" : "vptnr",
+                  "domainId" : "2ea85d48-5596-4569-9070-47c6925025fb",
+                  "visible" : true
+                },
+                "0d5820be-fc52-4982-815c-d7cf46f1ba20" : {
+                  "id" : "0d5820be-fc52-4982-815c-d7cf46f1ba20",
+                  "tabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "1f5e7807-b370-453c-9010-2500e7da79d3",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "05a37049-8d28-40cc-9720-6e61919dc16f" : {
+      "id" : "05a37049-8d28-40cc-9720-6e61919dc16f",
+      "name" : "Contract",
+      "note" : "Договор",
+      "structures" : {
+        "30a6a067-9e9b-4f10-ba94-832b5fe82fad" : {
+          "id" : "30a6a067-9e9b-4f10-ba94-832b5fe82fad",
+          "boId" : "05a37049-8d28-40cc-9720-6e61919dc16f",
+          "name" : "Contract",
+          "tables" : {
+            "5f863b91-514d-495e-8fb2-430326799473" : {
+              "id" : "5f863b91-514d-495e-8fb2-430326799473",
+              "structureId" : "30a6a067-9e9b-4f10-ba94-832b5fe82fad",
+              "boId" : "05a37049-8d28-40cc-9720-6e61919dc16f",
+              "name" : "contract",
+              "note" : "Договор",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "contract_pkey",
+                "columns" : [ "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9" : {
+                  "id" : "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9",
+                  "tabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "num" : 1,
+                  "note" : "Код договора",
+                  "name" : "zuonr",
+                  "domainId" : "96db78c6-29dd-49cc-aef3-2d4e9b94a008",
+                  "visible" : true
+                },
+                "22a3fe5e-d048-417c-82a7-f687754ddb90" : {
+                  "id" : "22a3fe5e-d048-417c-82a7-f687754ddb90",
+                  "tabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "num" : 2,
+                  "note" : "Номер",
+                  "name" : "zuonr_int_number",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "nullable" : true,
+                  "visible" : true
+                },
+                "f53298db-9dab-4da8-82df-6544595a46ca" : {
+                  "id" : "f53298db-9dab-4da8-82df-6544595a46ca",
+                  "tabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "num" : 3,
+                  "note" : "Дата",
+                  "name" : "zuonr_ext_date",
+                  "domainId" : "2f0f7147-f0be-4cb3-bca0-c0d6a7b2ee25",
+                  "nullable" : true,
+                  "visible" : true
+                },
+                "9b070517-d06b-44f6-b30f-d45740ac9478" : {
+                  "id" : "9b070517-d06b-44f6-b30f-d45740ac9478",
+                  "tabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "num" : 4,
+                  "note" : "Код контрагента",
+                  "name" : "vptnr",
+                  "domainId" : "2ea85d48-5596-4569-9070-47c6925025fb",
+                  "nullable" : true,
+                  "visible" : true,
+                  "refTabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "refTabKey" : "054b2804-2af6-419c-8927-3fa131628068"
+                }
+              },
+              "foreignKeys" : {
+                "ce8f7873-4650-4112-922d-66402b075704" : {
+                  "id" : "ce8f7873-4650-4112-922d-66402b075704",
+                  "tabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "name" : "contract_vptnr_fkey",
+                  "columns" : [ "9b070517-d06b-44f6-b30f-d45740ac9478" ],
+                  "refTabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "refColumns" : [ "054b2804-2af6-419c-8927-3fa131628068" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "05a37049-8d28-40cc-9720-6e61919dc16f",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "9d74ceb9-1b82-4280-9f6d-b10521b81f13" : {
+      "id" : "9d74ceb9-1b82-4280-9f6d-b10521b81f13",
+      "name" : "Zvat",
+      "note" : "Ставка НДС",
+      "structures" : {
+        "c0685fb1-8519-4d24-a67f-baa723dc21da" : {
+          "id" : "c0685fb1-8519-4d24-a67f-baa723dc21da",
+          "boId" : "9d74ceb9-1b82-4280-9f6d-b10521b81f13",
+          "name" : "Zvat",
+          "tables" : {
+            "638db134-8277-4ccd-998c-92a7c27f882d" : {
+              "id" : "638db134-8277-4ccd-998c-92a7c27f882d",
+              "structureId" : "c0685fb1-8519-4d24-a67f-baa723dc21da",
+              "boId" : "9d74ceb9-1b82-4280-9f6d-b10521b81f13",
+              "name" : "zvat",
+              "note" : "Ставка НДС",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "zvat_pkey",
+                "columns" : [ "d913bcca-440f-401b-a4e4-94d29230f97b" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "d913bcca-440f-401b-a4e4-94d29230f97b" : {
+                  "id" : "d913bcca-440f-401b-a4e4-94d29230f97b",
+                  "tabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "num" : 1,
+                  "note" : "Код ставки НДС",
+                  "name" : "zvat_rate",
+                  "domainId" : "2003b72b-ea8f-4881-ab4f-0d4a907b88e0",
+                  "visible" : true
+                },
+                "2c570c82-6739-42f0-8fbd-c691b95ddaa0" : {
+                  "id" : "2c570c82-6739-42f0-8fbd-c691b95ddaa0",
+                  "tabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "num" : 2,
+                  "note" : "Ставка НДС",
+                  "name" : "zvat_text",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "9d74ceb9-1b82-4280-9f6d-b10521b81f13",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "99872bbe-6860-462b-a3c9-f144932c0a00" : {
+      "id" : "99872bbe-6860-462b-a3c9-f144932c0a00",
+      "name" : "Mwskz",
+      "note" : "Коды налогов",
+      "structures" : {
+        "a84baf8a-1763-4d5e-b25c-d6a6cbf00b15" : {
+          "id" : "a84baf8a-1763-4d5e-b25c-d6a6cbf00b15",
+          "boId" : "99872bbe-6860-462b-a3c9-f144932c0a00",
+          "name" : "Mwskz",
+          "tables" : {
+            "6faa098f-e3d0-467d-ad49-b755f483e099" : {
+              "id" : "6faa098f-e3d0-467d-ad49-b755f483e099",
+              "structureId" : "a84baf8a-1763-4d5e-b25c-d6a6cbf00b15",
+              "boId" : "99872bbe-6860-462b-a3c9-f144932c0a00",
+              "name" : "mwskz",
+              "note" : "Коды налогов",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "mwskz_pkey",
+                "columns" : [ "80ab5150-5ae4-4c78-a51e-0f33b87d0eb8" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "80ab5150-5ae4-4c78-a51e-0f33b87d0eb8" : {
+                  "id" : "80ab5150-5ae4-4c78-a51e-0f33b87d0eb8",
+                  "tabId" : "6faa098f-e3d0-467d-ad49-b755f483e099",
+                  "num" : 1,
+                  "note" : "Код налога",
+                  "name" : "mwskz",
+                  "domainId" : "b6d325b2-2ace-4fa1-bdc9-655de345e332",
+                  "visible" : true
+                },
+                "1f2c6366-351a-4eb5-b90d-47737dadf79f" : {
+                  "id" : "1f2c6366-351a-4eb5-b90d-47737dadf79f",
+                  "tabId" : "6faa098f-e3d0-467d-ad49-b755f483e099",
+                  "num" : 2,
+                  "note" : "Описание",
+                  "name" : "text1",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "99872bbe-6860-462b-a3c9-f144932c0a00",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "78e1946a-1464-41ff-b8cf-cc98d5daba8d" : {
+      "id" : "78e1946a-1464-41ff-b8cf-cc98d5daba8d",
+      "name" : "Pfm",
+      "note" : "Службы/ПФМ",
+      "structures" : {
+        "2ae6b83d-0ac4-441e-bc6d-cf9cddf1cef0" : {
+          "id" : "2ae6b83d-0ac4-441e-bc6d-cf9cddf1cef0",
+          "boId" : "78e1946a-1464-41ff-b8cf-cc98d5daba8d",
+          "name" : "Pfm",
+          "tables" : {
+            "dd6733e3-a69a-4900-ad41-d829f5c9b4f1" : {
+              "id" : "dd6733e3-a69a-4900-ad41-d829f5c9b4f1",
+              "structureId" : "2ae6b83d-0ac4-441e-bc6d-cf9cddf1cef0",
+              "boId" : "78e1946a-1464-41ff-b8cf-cc98d5daba8d",
+              "name" : "pfm",
+              "note" : "Службы/ПФМ",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "pfm_pkey",
+                "columns" : [ "b05dec2a-394f-4f60-8e67-d8b277b71ffd" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "b05dec2a-394f-4f60-8e67-d8b277b71ffd" : {
+                  "id" : "b05dec2a-394f-4f60-8e67-d8b277b71ffd",
+                  "tabId" : "dd6733e3-a69a-4900-ad41-d829f5c9b4f1",
+                  "num" : 1,
+                  "note" : "Код ПФМ",
+                  "name" : "fistl",
+                  "domainId" : "65197d49-9508-4d28-9850-d56bc534438a",
+                  "visible" : true
+                },
+                "f01d65d6-becf-4478-a32c-322a54e88d45" : {
+                  "id" : "f01d65d6-becf-4478-a32c-322a54e88d45",
+                  "tabId" : "dd6733e3-a69a-4900-ad41-d829f5c9b4f1",
+                  "num" : 2,
+                  "note" : "Описание",
+                  "name" : "n_fistl",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "78e1946a-1464-41ff-b8cf-cc98d5daba8d",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "db682572-b6b7-4cab-866b-34bf85db70ef" : {
+      "id" : "db682572-b6b7-4cab-866b-34bf85db70ef",
+      "name" : "Fipos",
+      "note" : "Финансовые позиции",
+      "structures" : {
+        "c38376d8-18af-4e48-90e7-ba2d00d56ea2" : {
+          "id" : "c38376d8-18af-4e48-90e7-ba2d00d56ea2",
+          "boId" : "db682572-b6b7-4cab-866b-34bf85db70ef",
+          "name" : "Fipos",
+          "tables" : {
+            "616f4c5e-43d2-4e22-a4b4-64172a5bfa97" : {
+              "id" : "616f4c5e-43d2-4e22-a4b4-64172a5bfa97",
+              "structureId" : "c38376d8-18af-4e48-90e7-ba2d00d56ea2",
+              "boId" : "db682572-b6b7-4cab-866b-34bf85db70ef",
+              "name" : "fipos",
+              "note" : "Финансовые позиции",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "fipos_pkey",
+                "columns" : [ "4e532ca1-d54e-46d3-bff8-aa890154fb6f" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "4e532ca1-d54e-46d3-bff8-aa890154fb6f" : {
+                  "id" : "4e532ca1-d54e-46d3-bff8-aa890154fb6f",
+                  "tabId" : "616f4c5e-43d2-4e22-a4b4-64172a5bfa97",
+                  "num" : 1,
+                  "note" : "Код финансовой позиции",
+                  "name" : "fipos",
+                  "domainId" : "b39de70c-eefd-4159-a8df-8969ab2fcd5e",
+                  "visible" : true
+                },
+                "93c904eb-7fde-4f86-962c-f81d838b89a5" : {
+                  "id" : "93c904eb-7fde-4f86-962c-f81d838b89a5",
+                  "tabId" : "616f4c5e-43d2-4e22-a4b4-64172a5bfa97",
+                  "num" : 2,
+                  "note" : "Описание",
+                  "name" : "n_fipos",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "nullable" : true,
+                  "visible" : true
+                },
+                "7b9b6d1d-6fc2-41fc-9822-a1f3bcd9f19b" : {
+                  "id" : "7b9b6d1d-6fc2-41fc-9822-a1f3bcd9f19b",
+                  "tabId" : "616f4c5e-43d2-4e22-a4b4-64172a5bfa97",
+                  "num" : 3,
+                  "note" : "Год",
+                  "name" : "gjahr",
+                  "domainId" : "94ae5f30-0f84-4577-b64e-54059668c2ab",
+                  "nullable" : true,
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "db682572-b6b7-4cab-866b-34bf85db70ef",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "ce587913-1222-4919-936c-f7e19ecf2d11" : {
+      "id" : "ce587913-1222-4919-936c-f7e19ecf2d11",
+      "name" : "CostObject",
+      "note" : "Объект учета затрат",
+      "structures" : {
+        "de54845a-19ec-4594-948e-610dd387433f" : {
+          "id" : "de54845a-19ec-4594-948e-610dd387433f",
+          "boId" : "ce587913-1222-4919-936c-f7e19ecf2d11",
+          "name" : "CostObject",
+          "tables" : {
+            "21da46d5-5970-456b-8cc6-b8555a4dad3d" : {
+              "id" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+              "structureId" : "de54845a-19ec-4594-948e-610dd387433f",
+              "boId" : "ce587913-1222-4919-936c-f7e19ecf2d11",
+              "name" : "cost_object",
+              "note" : "Объект учета затрат",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "cost_object_pkey",
+                "columns" : [ "11c64595-4734-44b4-8967-444d3b05e723" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "11c64595-4734-44b4-8967-444d3b05e723" : {
+                  "id" : "11c64595-4734-44b4-8967-444d3b05e723",
+                  "tabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "num" : 1,
+                  "note" : "Код объекта учета затрат (ОУЗ)",
+                  "name" : "kostl",
+                  "domainId" : "0c58f156-73a2-4c34-8333-c758f97ec8fd",
+                  "visible" : true
+                },
+                "c57f50ae-363c-454f-b78b-7647a4b8f0a8" : {
+                  "id" : "c57f50ae-363c-454f-b78b-7647a4b8f0a8",
+                  "tabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "num" : 2,
+                  "note" : "Название",
+                  "name" : "ktext",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "nullable" : true,
+                  "visible" : true
+                },
+                "f07a6124-fd6a-4ef1-939f-f54d4c29f5ed" : {
+                  "id" : "f07a6124-fd6a-4ef1-939f-f54d4c29f5ed",
+                  "tabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "num" : 3,
+                  "note" : "Код балансовой единицы",
+                  "name" : "bukrs",
+                  "domainId" : "f696324f-9e19-4577-99db-f6acbbeb3f43",
+                  "nullable" : true,
+                  "visible" : true,
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refTabKey" : "652dd9aa-1b46-44ed-bf1a-f05a8d521f78"
+                }
+              },
+              "foreignKeys" : {
+                "26e101d9-74a5-488b-89a2-d764439b880c" : {
+                  "id" : "26e101d9-74a5-488b-89a2-d764439b880c",
+                  "tabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "name" : "cost_object_bukrs_fkey",
+                  "columns" : [ "f07a6124-fd6a-4ef1-939f-f54d4c29f5ed" ],
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refColumns" : [ "652dd9aa-1b46-44ed-bf1a-f05a8d521f78" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "ce587913-1222-4919-936c-f7e19ecf2d11",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "cfb3986f-68f3-40ad-bf33-bdc9fdb436ea" : {
+      "id" : "cfb3986f-68f3-40ad-bf33-bdc9fdb436ea",
+      "name" : "ZfiActivity",
+      "note" : "Вид деятельности",
+      "structures" : {
+        "de0d631c-4d6d-420f-8c07-ead2daa1033b" : {
+          "id" : "de0d631c-4d6d-420f-8c07-ead2daa1033b",
+          "boId" : "cfb3986f-68f3-40ad-bf33-bdc9fdb436ea",
+          "name" : "ZfiActivity",
+          "tables" : {
+            "70598336-2705-4c06-943b-1d8b6f7aaae8" : {
+              "id" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+              "structureId" : "de0d631c-4d6d-420f-8c07-ead2daa1033b",
+              "boId" : "cfb3986f-68f3-40ad-bf33-bdc9fdb436ea",
+              "name" : "zfi_activity",
+              "note" : "Вид деятельности",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "zfi_activity_pkey",
+                "columns" : [ "b81e2676-b317-4415-988a-5a7f11d1fcae" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "b81e2676-b317-4415-988a-5a7f11d1fcae" : {
+                  "id" : "b81e2676-b317-4415-988a-5a7f11d1fcae",
+                  "tabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "num" : 1,
+                  "note" : "Код вида деятельности",
+                  "name" : "zfi_cf015",
+                  "domainId" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+                  "visible" : true
+                },
+                "4eaa3ca1-7b33-4985-a7f2-efd410e32526" : {
+                  "id" : "4eaa3ca1-7b33-4985-a7f2-efd410e32526",
+                  "tabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "num" : 2,
+                  "note" : "Описание",
+                  "name" : "n_zfi_cf015",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "cfb3986f-68f3-40ad-bf33-bdc9fdb436ea",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "f10e90a4-3865-4481-bbea-a3114173dbfe" : {
+      "id" : "f10e90a4-3865-4481-bbea-a3114173dbfe",
+      "name" : "Register",
+      "note" : "Регистр",
+      "structures" : {
+        "5d7a87dd-940b-4eb1-98f3-66a09b164639" : {
+          "id" : "5d7a87dd-940b-4eb1-98f3-66a09b164639",
+          "boId" : "f10e90a4-3865-4481-bbea-a3114173dbfe",
+          "name" : "Register",
+          "tables" : {
+            "7e00576d-4945-4553-b1fa-e7e5513946e7" : {
+              "id" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+              "structureId" : "5d7a87dd-940b-4eb1-98f3-66a09b164639",
+              "boId" : "f10e90a4-3865-4481-bbea-a3114173dbfe",
+              "name" : "register",
+              "note" : "Регистр",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "register_pkey",
+                "columns" : [ "753798d9-45df-483b-ba34-b35c522d9c48" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "753798d9-45df-483b-ba34-b35c522d9c48" : {
+                  "id" : "753798d9-45df-483b-ba34-b35c522d9c48",
+                  "tabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "num" : 1,
+                  "note" : "Код регистра",
+                  "name" : "rldnr",
+                  "domainId" : "00f52444-280e-4664-8eb1-cef347296c75",
+                  "visible" : true
+                },
+                "234bc18a-6443-498f-90ab-41b313247bde" : {
+                  "id" : "234bc18a-6443-498f-90ab-41b313247bde",
+                  "tabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "f10e90a4-3865-4481-bbea-a3114173dbfe",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "95e0918d-1a0e-466b-b092-23a240bc6c1f" : {
+      "id" : "95e0918d-1a0e-466b-b092-23a240bc6c1f",
+      "name" : "RegisterGroup",
+      "note" : "Группа регистров",
+      "structures" : {
+        "6a0b5a7c-4467-4f8d-98b2-82bda1be7af6" : {
+          "id" : "6a0b5a7c-4467-4f8d-98b2-82bda1be7af6",
+          "boId" : "95e0918d-1a0e-466b-b092-23a240bc6c1f",
+          "name" : "RegisterGroup",
+          "tables" : {
+            "1af1ffa6-b6bf-4ced-a61d-5c16d9603e3d" : {
+              "id" : "1af1ffa6-b6bf-4ced-a61d-5c16d9603e3d",
+              "structureId" : "6a0b5a7c-4467-4f8d-98b2-82bda1be7af6",
+              "boId" : "95e0918d-1a0e-466b-b092-23a240bc6c1f",
+              "name" : "register_group",
+              "note" : "Группа регистров",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "register_group_pkey",
+                "columns" : [ "6bfc34f2-344e-4689-8dad-de42a2a861bb" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "6bfc34f2-344e-4689-8dad-de42a2a861bb" : {
+                  "id" : "6bfc34f2-344e-4689-8dad-de42a2a861bb",
+                  "tabId" : "1af1ffa6-b6bf-4ced-a61d-5c16d9603e3d",
+                  "num" : 1,
+                  "note" : "Код группы регистров",
+                  "name" : "ldgrp",
+                  "domainId" : "1940c283-9685-42e4-b622-cf6be84fb4da",
+                  "visible" : true
+                },
+                "c80f17ca-1db6-4751-985a-4d0c7894f308" : {
+                  "id" : "c80f17ca-1db6-4751-985a-4d0c7894f308",
+                  "tabId" : "1af1ffa6-b6bf-4ced-a61d-5c16d9603e3d",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "95e0918d-1a0e-466b-b092-23a240bc6c1f",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "4564a496-2b66-476c-a703-bcac21f33e4c" : {
+      "id" : "4564a496-2b66-476c-a703-bcac21f33e4c",
+      "name" : "MapReggr",
+      "note" : "Мэппинг групп регистра и регистров с БЕ",
+      "structures" : {
+        "5cd6c112-d4ed-4aab-8bfd-bb3c60bde3b7" : {
+          "id" : "5cd6c112-d4ed-4aab-8bfd-bb3c60bde3b7",
+          "boId" : "4564a496-2b66-476c-a703-bcac21f33e4c",
+          "name" : "MapReggr",
+          "tables" : {
+            "23fe4248-9cdb-45b9-8a08-a2e4798a24db" : {
+              "id" : "23fe4248-9cdb-45b9-8a08-a2e4798a24db",
+              "structureId" : "5cd6c112-d4ed-4aab-8bfd-bb3c60bde3b7",
+              "boId" : "4564a496-2b66-476c-a703-bcac21f33e4c",
+              "name" : "map_reggr",
+              "note" : "Мэппинг групп регистра и регистров с БЕ",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "map_reggr_pkey",
+                "columns" : [ "1d7c8885-68f7-495f-892f-5c29738c626d", "db128bb8-869c-40a7-84ab-1802317af7db", "cd9a05a9-6111-4c56-b295-bf7f35ef4c89" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "1d7c8885-68f7-495f-892f-5c29738c626d" : {
+                  "id" : "1d7c8885-68f7-495f-892f-5c29738c626d",
+                  "tabId" : "23fe4248-9cdb-45b9-8a08-a2e4798a24db",
+                  "num" : 1,
+                  "note" : "Код группы регистров",
+                  "name" : "ldgrp",
+                  "domainId" : "1940c283-9685-42e4-b622-cf6be84fb4da",
+                  "visible" : true,
+                  "refTabId" : "1af1ffa6-b6bf-4ced-a61d-5c16d9603e3d",
+                  "refTabKey" : "6bfc34f2-344e-4689-8dad-de42a2a861bb"
+                },
+                "db128bb8-869c-40a7-84ab-1802317af7db" : {
+                  "id" : "db128bb8-869c-40a7-84ab-1802317af7db",
+                  "tabId" : "23fe4248-9cdb-45b9-8a08-a2e4798a24db",
+                  "num" : 2,
+                  "note" : "Код регистра",
+                  "name" : "rldnr",
+                  "domainId" : "00f52444-280e-4664-8eb1-cef347296c75",
+                  "visible" : true,
+                  "refTabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "refTabKey" : "753798d9-45df-483b-ba34-b35c522d9c48"
+                },
+                "cd9a05a9-6111-4c56-b295-bf7f35ef4c89" : {
+                  "id" : "cd9a05a9-6111-4c56-b295-bf7f35ef4c89",
+                  "tabId" : "23fe4248-9cdb-45b9-8a08-a2e4798a24db",
+                  "num" : 3,
+                  "note" : "Код балансовой единицы",
+                  "name" : "bukrs",
+                  "domainId" : "f696324f-9e19-4577-99db-f6acbbeb3f43",
+                  "visible" : true,
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refTabKey" : "652dd9aa-1b46-44ed-bf1a-f05a8d521f78"
+                }
+              },
+              "foreignKeys" : {
+                "53c1159e-c262-4f1b-92fb-b200f1b481fa" : {
+                  "id" : "53c1159e-c262-4f1b-92fb-b200f1b481fa",
+                  "tabId" : "23fe4248-9cdb-45b9-8a08-a2e4798a24db",
+                  "name" : "map_reggr_ldgrp_fkey",
+                  "columns" : [ "1d7c8885-68f7-495f-892f-5c29738c626d" ],
+                  "refTabId" : "1af1ffa6-b6bf-4ced-a61d-5c16d9603e3d",
+                  "refColumns" : [ "6bfc34f2-344e-4689-8dad-de42a2a861bb" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "196c2cfe-52fc-42b5-a5a9-8fce7d22d90e" : {
+                  "id" : "196c2cfe-52fc-42b5-a5a9-8fce7d22d90e",
+                  "tabId" : "23fe4248-9cdb-45b9-8a08-a2e4798a24db",
+                  "name" : "map_reggr_rldnr_fkey",
+                  "columns" : [ "db128bb8-869c-40a7-84ab-1802317af7db" ],
+                  "refTabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "refColumns" : [ "753798d9-45df-483b-ba34-b35c522d9c48" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "facb8c93-b5e8-4e6b-847a-c964f065c516" : {
+                  "id" : "facb8c93-b5e8-4e6b-847a-c964f065c516",
+                  "tabId" : "23fe4248-9cdb-45b9-8a08-a2e4798a24db",
+                  "name" : "map_reggr_bukrs_fkey",
+                  "columns" : [ "cd9a05a9-6111-4c56-b295-bf7f35ef4c89" ],
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refColumns" : [ "652dd9aa-1b46-44ed-bf1a-f05a8d521f78" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "4564a496-2b66-476c-a703-bcac21f33e4c",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "e363a724-29a6-4ef4-87b2-31af80f720f2" : {
+      "id" : "e363a724-29a6-4ef4-87b2-31af80f720f2",
+      "name" : "EntryKind",
+      "note" : "Тип проводки",
+      "structures" : {
+        "cba1919b-c236-4af7-a734-e12979a3cd0e" : {
+          "id" : "cba1919b-c236-4af7-a734-e12979a3cd0e",
+          "boId" : "e363a724-29a6-4ef4-87b2-31af80f720f2",
+          "name" : "EntryKind",
+          "tables" : {
+            "04078bf3-d199-4dd9-906e-704d101a1b48" : {
+              "id" : "04078bf3-d199-4dd9-906e-704d101a1b48",
+              "structureId" : "cba1919b-c236-4af7-a734-e12979a3cd0e",
+              "boId" : "e363a724-29a6-4ef4-87b2-31af80f720f2",
+              "name" : "entry_kind",
+              "note" : "Дебет / Кредит",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "entry_kind_pkey",
+                "columns" : [ "6aaf4a59-7124-4ce3-86ea-d479fa8c3475" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "6aaf4a59-7124-4ce3-86ea-d479fa8c3475" : {
+                  "id" : "6aaf4a59-7124-4ce3-86ea-d479fa8c3475",
+                  "tabId" : "04078bf3-d199-4dd9-906e-704d101a1b48",
+                  "num" : 1,
+                  "note" : "Дебет / Кредит",
+                  "name" : "drcrk",
+                  "domainId" : "4c08860e-6b96-49b4-9281-b202cfdde0a8",
+                  "visible" : true
+                },
+                "32d33a3d-1e0a-4fdb-ac47-d51b394979e7" : {
+                  "id" : "32d33a3d-1e0a-4fdb-ac47-d51b394979e7",
+                  "tabId" : "04078bf3-d199-4dd9-906e-704d101a1b48",
+                  "num" : 2,
+                  "note" : "Наименование",
+                  "name" : "name",
+                  "domainId" : "0f8e243a-bc8d-4b12-85da-8128eec6b9a1",
+                  "visible" : true
+                }
+              },
+              "data" : {
+                "e81d0a01-5b68-45c8-8603-550a920985f8" : {
+                  "6aaf4a59-7124-4ce3-86ea-d479fa8c3475" : "S",
+                  "32d33a3d-1e0a-4fdb-ac47-d51b394979e7" : "Дебет"
+                },
+                "ec359709-018d-42c3-a7ef-d343f0889115" : {
+                  "6aaf4a59-7124-4ce3-86ea-d479fa8c3475" : "H",
+                  "32d33a3d-1e0a-4fdb-ac47-d51b394979e7" : "Кредит"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "e363a724-29a6-4ef4-87b2-31af80f720f2",
+          "mode" : "PRIMARY"
+        }
+      }
+    },
+    "d646abf3-9227-42a5-aa16-b472de3d9180" : {
+      "id" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+      "name" : "Entry",
+      "note" : "Бухгалтерская проводка",
+      "structures" : {
+        "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d" : {
+          "id" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+          "boId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+          "name" : "Entry",
+          "tables" : {
+            "7259acd0-64b8-4347-a951-acfdb51e1baa" : {
+              "id" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+              "structureId" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+              "boId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+              "name" : "entry",
+              "note" : "Бухгалтерская проводка",
+              "tabType" : "Common",
+              "pkey" : {
+                "name" : "entry_pkey",
+                "columns" : [ "299c800b-23c8-4b17-82d2-bc220e8dc363", "546275be-59a5-4f1e-bcb2-02b5a386ce37", "2454a6c5-aa4a-4795-841d-5ec50446d2d4", "c5a5d24f-b0da-4876-bc0f-735f453e939b", "e3c1608c-ddab-4f69-99f7-b6666461f106" ]
+              },
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "299c800b-23c8-4b17-82d2-bc220e8dc363" : {
+                  "id" : "299c800b-23c8-4b17-82d2-bc220e8dc363",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 1,
+                  "note" : "Код регистра",
+                  "name" : "rldnr",
+                  "domainId" : "00f52444-280e-4664-8eb1-cef347296c75",
+                  "visible" : true,
+                  "refTabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "refTabKey" : "753798d9-45df-483b-ba34-b35c522d9c48"
+                },
+                "546275be-59a5-4f1e-bcb2-02b5a386ce37" : {
+                  "id" : "546275be-59a5-4f1e-bcb2-02b5a386ce37",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 2,
+                  "note" : "Код балансовой единицы",
+                  "name" : "bukrs",
+                  "domainId" : "f696324f-9e19-4577-99db-f6acbbeb3f43",
+                  "visible" : true,
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refTabKey" : "652dd9aa-1b46-44ed-bf1a-f05a8d521f78"
+                },
+                "2454a6c5-aa4a-4795-841d-5ec50446d2d4" : {
+                  "id" : "2454a6c5-aa4a-4795-841d-5ec50446d2d4",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 3,
+                  "note" : "Год",
+                  "name" : "gjahr",
+                  "domainId" : "94ae5f30-0f84-4577-b64e-54059668c2ab",
+                  "visible" : true
+                },
+                "c5a5d24f-b0da-4876-bc0f-735f453e939b" : {
+                  "id" : "c5a5d24f-b0da-4876-bc0f-735f453e939b",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 4,
+                  "note" : "Номер документа",
+                  "name" : "belnr",
+                  "domainId" : "69efd89f-2fed-469b-8ec2-26fdf834173d",
+                  "visible" : true
+                },
+                "e3c1608c-ddab-4f69-99f7-b6666461f106" : {
+                  "id" : "e3c1608c-ddab-4f69-99f7-b6666461f106",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 5,
+                  "note" : "Строка проводки по регистру",
+                  "name" : "doclnd",
+                  "domainId" : "44789d96-c654-4481-a7da-2e3dbedf6b75",
+                  "visible" : true
+                },
+                "129934ed-a42e-4a95-8bdf-e4e7f7de79a5" : {
+                  "id" : "129934ed-a42e-4a95-8bdf-e4e7f7de79a5",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 6,
+                  "note" : "Дебет / Кредит",
+                  "name" : "drcrk",
+                  "domainId" : "4c08860e-6b96-49b4-9281-b202cfdde0a8",
+                  "visible" : true,
+                  "refTabId" : "04078bf3-d199-4dd9-906e-704d101a1b48",
+                  "refTabKey" : "6aaf4a59-7124-4ce3-86ea-d479fa8c3475"
+                },
+                "04255d99-4082-4d23-8241-81e8d336ff65" : {
+                  "id" : "04255d99-4082-4d23-8241-81e8d336ff65",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 7,
+                  "note" : "Код счета",
+                  "name" : "racct",
+                  "domainId" : "301f3bd3-f553-496a-865e-fe0ee438084e",
+                  "visible" : true,
+                  "refTabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "refTabKey" : "44994d7a-5539-429d-a6ff-2688b8262653"
+                },
+                "2e942ad7-dec3-4492-9302-1e10e2803593" : {
+                  "id" : "2e942ad7-dec3-4492-9302-1e10e2803593",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 8,
+                  "note" : "Сумма",
+                  "name" : "hsl",
+                  "domainId" : "adce9dd5-1bab-41a0-b2f1-a0aa9c40753b",
+                  "visible" : true
+                },
+                "c1dbeef5-6417-4434-b5b6-665f3e62dd95" : {
+                  "id" : "c1dbeef5-6417-4434-b5b6-665f3e62dd95",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 9,
+                  "note" : "Дата документа",
+                  "name" : "budat",
+                  "domainId" : "1be01674-5c66-4384-b5d9-d363656b052f",
+                  "visible" : true
+                },
+                "11d91949-9606-495e-9a48-9fbcd4aabd44" : {
+                  "id" : "11d91949-9606-495e-9a48-9fbcd4aabd44",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 10,
+                  "note" : "Код вида документа",
+                  "name" : "blart",
+                  "domainId" : "eaa85b74-7139-4a15-8512-363dfc70f7b8",
+                  "visible" : true,
+                  "refTabId" : "a695d592-564d-4d78-90e3-d61c5b60981a",
+                  "refTabKey" : "59ce2ddc-c2f0-4141-b0f1-d7ffedb275e4"
+                },
+                "481c8198-4918-4357-80ae-b62723709a82" : {
+                  "id" : "481c8198-4918-4357-80ae-b62723709a82",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 11,
+                  "note" : "Код валюты",
+                  "name" : "rhcur",
+                  "domainId" : "34e6c37f-74ac-44f1-b2bb-d65f53f72a48",
+                  "visible" : true,
+                  "refTabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "refTabKey" : "d4f0380f-d2f7-45cc-8aa2-0382fc48912e"
+                },
+                "a2abd0a3-b8f7-4f24-b551-4468370ce64a" : {
+                  "id" : "a2abd0a3-b8f7-4f24-b551-4468370ce64a",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "num" : 12,
+                  "note" : "Номер отдельной позиции",
+                  "name" : "buzei",
+                  "domainId" : "99e0ba9f-edad-48d4-8011-2128d9b5e6b4",
+                  "visible" : true
+                }
+              },
+              "foreignKeys" : {
+                "473f8fd1-cd4b-420b-82e9-e9e6510d68ab" : {
+                  "id" : "473f8fd1-cd4b-420b-82e9-e9e6510d68ab",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "name" : "entry_rldnr_fkey",
+                  "columns" : [ "299c800b-23c8-4b17-82d2-bc220e8dc363" ],
+                  "refTabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "refColumns" : [ "753798d9-45df-483b-ba34-b35c522d9c48" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad" : {
+                  "id" : "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "name" : "entry_bukrs_fkey",
+                  "columns" : [ "546275be-59a5-4f1e-bcb2-02b5a386ce37" ],
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refColumns" : [ "652dd9aa-1b46-44ed-bf1a-f05a8d521f78" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "49969341-fe6d-4e2b-990b-26402cc928cf" : {
+                  "id" : "49969341-fe6d-4e2b-990b-26402cc928cf",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "name" : "entry_drcrk_fkey",
+                  "columns" : [ "129934ed-a42e-4a95-8bdf-e4e7f7de79a5" ],
+                  "refTabId" : "04078bf3-d199-4dd9-906e-704d101a1b48",
+                  "refColumns" : [ "6aaf4a59-7124-4ce3-86ea-d479fa8c3475" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79" : {
+                  "id" : "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "name" : "entry_racct_fkey",
+                  "columns" : [ "04255d99-4082-4d23-8241-81e8d336ff65" ],
+                  "refTabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "refColumns" : [ "44994d7a-5539-429d-a6ff-2688b8262653" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b" : {
+                  "id" : "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "name" : "entry_blart_fkey",
+                  "columns" : [ "11d91949-9606-495e-9a48-9fbcd4aabd44" ],
+                  "refTabId" : "a695d592-564d-4d78-90e3-d61c5b60981a",
+                  "refColumns" : [ "59ce2ddc-c2f0-4141-b0f1-d7ffedb275e4" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "7ecaa410-abfe-41aa-bff8-52182072523c" : {
+                  "id" : "7ecaa410-abfe-41aa-bff8-52182072523c",
+                  "tabId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+                  "name" : "entry_rhcur_fkey",
+                  "columns" : [ "481c8198-4918-4357-80ae-b62723709a82" ],
+                  "refTabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "refColumns" : [ "d4f0380f-d2f7-45cc-8aa2-0382fc48912e" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          }
+        }
+      },
+      "abstract" : true
+    },
+    "b23dee1f-6816-450f-85ae-5079d1c066d6" : {
+      "id" : "b23dee1f-6816-450f-85ae-5079d1c066d6",
+      "inheritedId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+      "name" : "Entry6001020000",
+      "note" : "Проводки счет 6001020000",
+      "structures" : {
+        "0d41d79f-59df-4b2c-97cb-5be33002eec8" : {
+          "id" : "0d41d79f-59df-4b2c-97cb-5be33002eec8",
+          "boId" : "b23dee1f-6816-450f-85ae-5079d1c066d6",
+          "inheritedId" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+          "name" : "Entry6001020000",
+          "tables" : {
+            "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89" : {
+              "id" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+              "structureId" : "0d41d79f-59df-4b2c-97cb-5be33002eec8",
+              "boId" : "b23dee1f-6816-450f-85ae-5079d1c066d6",
+              "name" : "entry6001020000_1",
+              "note" : "Проводки счет 6001020000",
+              "tabType" : "Common",
+              "version" : 1,
+              "pkey" : {
+                "name" : "entry6001020000_1_pkey",
+                "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa"
+              },
+              "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "45d0300b-5d2f-4be2-ab6a-6ba83e65dcb5" : {
+                  "id" : "45d0300b-5d2f-4be2-ab6a-6ba83e65dcb5",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "num" : 13,
+                  "note" : "Код вида деятельности",
+                  "name" : "zfi_cf015",
+                  "domainId" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+                  "visible" : true,
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refTabKey" : "b81e2676-b317-4415-988a-5a7f11d1fcae"
+                },
+                "63af437c-41f3-42ac-b9a8-7d9caf8aa2ce" : {
+                  "id" : "63af437c-41f3-42ac-b9a8-7d9caf8aa2ce",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "num" : 14,
+                  "note" : "Код контрагента",
+                  "name" : "vptnr",
+                  "domainId" : "2ea85d48-5596-4569-9070-47c6925025fb",
+                  "visible" : true,
+                  "refTabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "refTabKey" : "054b2804-2af6-419c-8927-3fa131628068"
+                },
+                "d7ca4632-089d-44b9-8f91-3d15a20d2793" : {
+                  "id" : "d7ca4632-089d-44b9-8f91-3d15a20d2793",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "num" : 15,
+                  "note" : "Код договора",
+                  "name" : "zuonr",
+                  "domainId" : "96db78c6-29dd-49cc-aef3-2d4e9b94a008",
+                  "visible" : true,
+                  "refTabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "refTabKey" : "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9"
+                },
+                "bf2683b1-3555-4939-8434-282fa12efa64" : {
+                  "id" : "bf2683b1-3555-4939-8434-282fa12efa64",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "num" : 16,
+                  "note" : "Код ставки НДС",
+                  "name" : "zvat_rate",
+                  "domainId" : "2003b72b-ea8f-4881-ab4f-0d4a907b88e0",
+                  "visible" : true,
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refTabKey" : "d913bcca-440f-401b-a4e4-94d29230f97b"
+                }
+              },
+              "foreignKeys" : {
+                "af05187d-94bf-4202-a0d4-63f8212b7aa4" : {
+                  "id" : "af05187d-94bf-4202-a0d4-63f8212b7aa4",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_rldnr_fkey",
+                  "inheritedId" : "473f8fd1-cd4b-420b-82e9-e9e6510d68ab"
+                },
+                "556b255b-0b95-41dc-9292-1a3c5214ca4c" : {
+                  "id" : "556b255b-0b95-41dc-9292-1a3c5214ca4c",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_bukrs_fkey",
+                  "inheritedId" : "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad"
+                },
+                "230e10d6-6b03-49fb-b4ad-8d24d3f0628d" : {
+                  "id" : "230e10d6-6b03-49fb-b4ad-8d24d3f0628d",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_drcrk_fkey",
+                  "inheritedId" : "49969341-fe6d-4e2b-990b-26402cc928cf"
+                },
+                "5df53fa8-96fe-48a8-939f-11e8b943c85a" : {
+                  "id" : "5df53fa8-96fe-48a8-939f-11e8b943c85a",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_racct_fkey",
+                  "inheritedId" : "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79"
+                },
+                "0ae7d4ef-69ab-442d-bfad-8a63d5f0dcaf" : {
+                  "id" : "0ae7d4ef-69ab-442d-bfad-8a63d5f0dcaf",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_blart_fkey",
+                  "inheritedId" : "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b"
+                },
+                "879fd009-74f9-47a0-ad73-e7af67f7ee39" : {
+                  "id" : "879fd009-74f9-47a0-ad73-e7af67f7ee39",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_rhcur_fkey",
+                  "inheritedId" : "7ecaa410-abfe-41aa-bff8-52182072523c"
+                },
+                "908ee9ff-859a-4424-9e2c-cf57878dad82" : {
+                  "id" : "908ee9ff-859a-4424-9e2c-cf57878dad82",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_zfi_cf015_fkey",
+                  "columns" : [ "45d0300b-5d2f-4be2-ab6a-6ba83e65dcb5" ],
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refColumns" : [ "b81e2676-b317-4415-988a-5a7f11d1fcae" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "6582adcb-4b26-42b5-b694-e3d7c7d24d42" : {
+                  "id" : "6582adcb-4b26-42b5-b694-e3d7c7d24d42",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_vptnr_fkey",
+                  "columns" : [ "63af437c-41f3-42ac-b9a8-7d9caf8aa2ce" ],
+                  "refTabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "refColumns" : [ "054b2804-2af6-419c-8927-3fa131628068" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "ca48ac77-f972-4afe-88b0-e4a098a806ee" : {
+                  "id" : "ca48ac77-f972-4afe-88b0-e4a098a806ee",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_zuonr_fkey",
+                  "columns" : [ "d7ca4632-089d-44b9-8f91-3d15a20d2793" ],
+                  "refTabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "refColumns" : [ "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "17b7ffe8-5ce3-460f-beef-5125b9f27a21" : {
+                  "id" : "17b7ffe8-5ce3-460f-beef-5125b9f27a21",
+                  "tabId" : "b4e4bb5f-ba30-4033-a422-f7bbe3b84a89",
+                  "name" : "entry6001020000_1_zvat_rate_fkey",
+                  "columns" : [ "bf2683b1-3555-4939-8434-282fa12efa64" ],
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refColumns" : [ "d913bcca-440f-401b-a4e4-94d29230f97b" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          },
+          "versioning" : true
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "b23dee1f-6816-450f-85ae-5079d1c066d6",
+          "mode" : "PRIMARY"
+        }
+      },
+      "versioning" : true
+    },
+    "fc1ececa-082e-4ade-a2ac-9d6e143ba5a5" : {
+      "id" : "fc1ececa-082e-4ade-a2ac-9d6e143ba5a5",
+      "inheritedId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+      "name" : "Entry6002000000",
+      "note" : "Проводки счет 6002000000",
+      "structures" : {
+        "7472ac6d-3f66-4d25-9ba2-73ed80cd3df2" : {
+          "id" : "7472ac6d-3f66-4d25-9ba2-73ed80cd3df2",
+          "boId" : "fc1ececa-082e-4ade-a2ac-9d6e143ba5a5",
+          "inheritedId" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+          "name" : "Entry6002000000",
+          "tables" : {
+            "851a0ee3-c757-4846-ae5a-e663c6be344b" : {
+              "id" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+              "structureId" : "7472ac6d-3f66-4d25-9ba2-73ed80cd3df2",
+              "boId" : "fc1ececa-082e-4ade-a2ac-9d6e143ba5a5",
+              "name" : "entry6002000000_1",
+              "note" : "Проводки счет 6002000000",
+              "tabType" : "Common",
+              "version" : 1,
+              "pkey" : {
+                "name" : "entry6002000000_1_pkey",
+                "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa"
+              },
+              "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "2a65da5d-40d6-4032-87b5-9cc4482335ad" : {
+                  "id" : "2a65da5d-40d6-4032-87b5-9cc4482335ad",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "num" : 13,
+                  "note" : "Код вида деятельности",
+                  "name" : "zfi_cf015",
+                  "domainId" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+                  "visible" : true,
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refTabKey" : "b81e2676-b317-4415-988a-5a7f11d1fcae"
+                },
+                "e904ff15-abec-47b6-bf8a-f56abb805512" : {
+                  "id" : "e904ff15-abec-47b6-bf8a-f56abb805512",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "num" : 14,
+                  "note" : "Код контрагента",
+                  "name" : "vptnr",
+                  "domainId" : "2ea85d48-5596-4569-9070-47c6925025fb",
+                  "visible" : true,
+                  "refTabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "refTabKey" : "054b2804-2af6-419c-8927-3fa131628068"
+                },
+                "20350e29-dc8d-433d-8dc8-9f95dd6b6c0f" : {
+                  "id" : "20350e29-dc8d-433d-8dc8-9f95dd6b6c0f",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "num" : 15,
+                  "note" : "Код договора",
+                  "name" : "zuonr",
+                  "domainId" : "96db78c6-29dd-49cc-aef3-2d4e9b94a008",
+                  "visible" : true,
+                  "refTabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "refTabKey" : "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9"
+                },
+                "cb82c225-d2b9-4b71-ae05-de2ac4702475" : {
+                  "id" : "cb82c225-d2b9-4b71-ae05-de2ac4702475",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "num" : 16,
+                  "note" : "Код ставки НДС",
+                  "name" : "zvat_rate",
+                  "domainId" : "2003b72b-ea8f-4881-ab4f-0d4a907b88e0",
+                  "visible" : true,
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refTabKey" : "d913bcca-440f-401b-a4e4-94d29230f97b"
+                }
+              },
+              "foreignKeys" : {
+                "3ed3e961-b7d1-4f27-b961-dc9219c99345" : {
+                  "id" : "3ed3e961-b7d1-4f27-b961-dc9219c99345",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_rldnr_fkey",
+                  "inheritedId" : "473f8fd1-cd4b-420b-82e9-e9e6510d68ab"
+                },
+                "c352ec9e-20ba-450f-87de-abc2887f6101" : {
+                  "id" : "c352ec9e-20ba-450f-87de-abc2887f6101",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_bukrs_fkey",
+                  "inheritedId" : "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad"
+                },
+                "1bdd935e-0baf-4856-956a-de2f803cfe6a" : {
+                  "id" : "1bdd935e-0baf-4856-956a-de2f803cfe6a",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_drcrk_fkey",
+                  "inheritedId" : "49969341-fe6d-4e2b-990b-26402cc928cf"
+                },
+                "0f01123b-d8eb-4bf2-9f58-091699db8bd1" : {
+                  "id" : "0f01123b-d8eb-4bf2-9f58-091699db8bd1",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_racct_fkey",
+                  "inheritedId" : "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79"
+                },
+                "6bec1a86-7751-499d-8283-a46cff2e50cb" : {
+                  "id" : "6bec1a86-7751-499d-8283-a46cff2e50cb",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_blart_fkey",
+                  "inheritedId" : "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b"
+                },
+                "1edab1ea-607c-4e07-928b-92c52e5858f0" : {
+                  "id" : "1edab1ea-607c-4e07-928b-92c52e5858f0",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_rhcur_fkey",
+                  "inheritedId" : "7ecaa410-abfe-41aa-bff8-52182072523c"
+                },
+                "f16eeb1f-28b3-4c0c-9ca6-b9fd15526044" : {
+                  "id" : "f16eeb1f-28b3-4c0c-9ca6-b9fd15526044",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_zfi_cf015_fkey",
+                  "columns" : [ "2a65da5d-40d6-4032-87b5-9cc4482335ad" ],
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refColumns" : [ "b81e2676-b317-4415-988a-5a7f11d1fcae" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "b232e852-5b66-4cc0-a1ec-7500fe51674a" : {
+                  "id" : "b232e852-5b66-4cc0-a1ec-7500fe51674a",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_vptnr_fkey",
+                  "columns" : [ "e904ff15-abec-47b6-bf8a-f56abb805512" ],
+                  "refTabId" : "05e274af-8d70-4e3e-89c7-ee56b55d5ae2",
+                  "refColumns" : [ "054b2804-2af6-419c-8927-3fa131628068" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "83cf7037-6ff4-4beb-a71b-338ce1f6dfa3" : {
+                  "id" : "83cf7037-6ff4-4beb-a71b-338ce1f6dfa3",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_zuonr_fkey",
+                  "columns" : [ "20350e29-dc8d-433d-8dc8-9f95dd6b6c0f" ],
+                  "refTabId" : "5f863b91-514d-495e-8fb2-430326799473",
+                  "refColumns" : [ "c4d2eb7f-aa4c-428f-98a8-dd4ff50919d9" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "56b7ae33-4d24-473d-9a26-1a60cdfb9e2a" : {
+                  "id" : "56b7ae33-4d24-473d-9a26-1a60cdfb9e2a",
+                  "tabId" : "851a0ee3-c757-4846-ae5a-e663c6be344b",
+                  "name" : "entry6002000000_1_zvat_rate_fkey",
+                  "columns" : [ "cb82c225-d2b9-4b71-ae05-de2ac4702475" ],
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refColumns" : [ "d913bcca-440f-401b-a4e4-94d29230f97b" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          },
+          "versioning" : true
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "fc1ececa-082e-4ade-a2ac-9d6e143ba5a5",
+          "mode" : "PRIMARY"
+        }
+      },
+      "versioning" : true
+    },
+    "2b74f472-310e-4188-8416-71c904425983" : {
+      "id" : "2b74f472-310e-4188-8416-71c904425983",
+      "inheritedId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+      "name" : "Entry1904010000",
+      "note" : "Проводки счет 1904010000",
+      "structures" : {
+        "a90d1ab3-f87f-4cb1-a776-bc5ce0431786" : {
+          "id" : "a90d1ab3-f87f-4cb1-a776-bc5ce0431786",
+          "boId" : "2b74f472-310e-4188-8416-71c904425983",
+          "inheritedId" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+          "name" : "Entry1904010000",
+          "tables" : {
+            "c3d7b781-20bc-473f-8764-aa90fc452b6c" : {
+              "id" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+              "structureId" : "a90d1ab3-f87f-4cb1-a776-bc5ce0431786",
+              "boId" : "2b74f472-310e-4188-8416-71c904425983",
+              "name" : "entry1904010000_1",
+              "note" : "Проводки счет 1904010000",
+              "tabType" : "Common",
+              "version" : 1,
+              "pkey" : {
+                "name" : "entry1904010000_1_pkey",
+                "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa"
+              },
+              "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "b3b86e77-d253-497f-b4b2-b9b155894525" : {
+                  "id" : "b3b86e77-d253-497f-b4b2-b9b155894525",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "num" : 13,
+                  "note" : "Код вида деятельности",
+                  "name" : "zfi_cf015",
+                  "domainId" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+                  "visible" : true,
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refTabKey" : "b81e2676-b317-4415-988a-5a7f11d1fcae"
+                },
+                "2da7a0b8-c94c-4714-b16f-2c510c3ab8fa" : {
+                  "id" : "2da7a0b8-c94c-4714-b16f-2c510c3ab8fa",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "num" : 14,
+                  "note" : "Код ставки НДС",
+                  "name" : "zvat_rate",
+                  "domainId" : "2003b72b-ea8f-4881-ab4f-0d4a907b88e0",
+                  "visible" : true,
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refTabKey" : "d913bcca-440f-401b-a4e4-94d29230f97b"
+                },
+                "3b0520f8-db33-4780-bdc8-3b600b8e12be" : {
+                  "id" : "3b0520f8-db33-4780-bdc8-3b600b8e12be",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "num" : 15,
+                  "note" : "Код налога",
+                  "name" : "mwskz",
+                  "domainId" : "b6d325b2-2ace-4fa1-bdc9-655de345e332",
+                  "visible" : true,
+                  "refTabId" : "6faa098f-e3d0-467d-ad49-b755f483e099",
+                  "refTabKey" : "80ab5150-5ae4-4c78-a51e-0f33b87d0eb8"
+                }
+              },
+              "foreignKeys" : {
+                "b0c0860e-75fa-4f4f-9ec6-54934249d8a2" : {
+                  "id" : "b0c0860e-75fa-4f4f-9ec6-54934249d8a2",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_rldnr_fkey",
+                  "inheritedId" : "473f8fd1-cd4b-420b-82e9-e9e6510d68ab"
+                },
+                "4807546b-9db3-46ac-8f45-ffac1bdfe58e" : {
+                  "id" : "4807546b-9db3-46ac-8f45-ffac1bdfe58e",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_bukrs_fkey",
+                  "inheritedId" : "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad"
+                },
+                "fe4512f5-c834-4f28-97be-ccddc129b5de" : {
+                  "id" : "fe4512f5-c834-4f28-97be-ccddc129b5de",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_drcrk_fkey",
+                  "inheritedId" : "49969341-fe6d-4e2b-990b-26402cc928cf"
+                },
+                "8537b46f-b87c-46e9-b490-b5d4c53d0f6c" : {
+                  "id" : "8537b46f-b87c-46e9-b490-b5d4c53d0f6c",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_racct_fkey",
+                  "inheritedId" : "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79"
+                },
+                "82d114b4-7d5a-4dd6-907f-9ff9e39a0ac8" : {
+                  "id" : "82d114b4-7d5a-4dd6-907f-9ff9e39a0ac8",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_blart_fkey",
+                  "inheritedId" : "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b"
+                },
+                "14e91c75-ee9b-4f0a-a7dd-96b8a0539374" : {
+                  "id" : "14e91c75-ee9b-4f0a-a7dd-96b8a0539374",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_rhcur_fkey",
+                  "inheritedId" : "7ecaa410-abfe-41aa-bff8-52182072523c"
+                },
+                "cb6b74fa-8101-44e2-8804-fd72510e9e94" : {
+                  "id" : "cb6b74fa-8101-44e2-8804-fd72510e9e94",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_zfi_cf015_fkey",
+                  "columns" : [ "b3b86e77-d253-497f-b4b2-b9b155894525" ],
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refColumns" : [ "b81e2676-b317-4415-988a-5a7f11d1fcae" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "18ac2483-4b3d-4c1a-855e-556518a24126" : {
+                  "id" : "18ac2483-4b3d-4c1a-855e-556518a24126",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_zvat_rate_fkey",
+                  "columns" : [ "2da7a0b8-c94c-4714-b16f-2c510c3ab8fa" ],
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refColumns" : [ "d913bcca-440f-401b-a4e4-94d29230f97b" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "0ed321b0-7c5d-46bc-9066-247ae075e274" : {
+                  "id" : "0ed321b0-7c5d-46bc-9066-247ae075e274",
+                  "tabId" : "c3d7b781-20bc-473f-8764-aa90fc452b6c",
+                  "name" : "entry1904010000_1_mwskz_fkey",
+                  "columns" : [ "3b0520f8-db33-4780-bdc8-3b600b8e12be" ],
+                  "refTabId" : "6faa098f-e3d0-467d-ad49-b755f483e099",
+                  "refColumns" : [ "80ab5150-5ae4-4c78-a51e-0f33b87d0eb8" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          },
+          "versioning" : true
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "2b74f472-310e-4188-8416-71c904425983",
+          "mode" : "PRIMARY"
+        }
+      },
+      "versioning" : true
+    },
+    "e30a2f63-ecd6-4245-a0c5-e6ceb23db0cf" : {
+      "id" : "e30a2f63-ecd6-4245-a0c5-e6ceb23db0cf",
+      "inheritedId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+      "name" : "Entry5100000201",
+      "note" : "Проводки счет 5100000201",
+      "structures" : {
+        "45922054-2c65-4b1d-938f-8e1c7aad4af1" : {
+          "id" : "45922054-2c65-4b1d-938f-8e1c7aad4af1",
+          "boId" : "e30a2f63-ecd6-4245-a0c5-e6ceb23db0cf",
+          "inheritedId" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+          "name" : "Entry5100000201",
+          "tables" : {
+            "4aa08af7-16a3-4661-8409-33be4a60e8d5" : {
+              "id" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+              "structureId" : "45922054-2c65-4b1d-938f-8e1c7aad4af1",
+              "boId" : "e30a2f63-ecd6-4245-a0c5-e6ceb23db0cf",
+              "name" : "entry5100000201_1",
+              "note" : "Проводки счет 5100000201",
+              "tabType" : "Common",
+              "version" : 1,
+              "pkey" : {
+                "name" : "entry5100000201_1_pkey",
+                "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa"
+              },
+              "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "f436cb00-cbc5-44d7-ac54-940498dbed01" : {
+                  "id" : "f436cb00-cbc5-44d7-ac54-940498dbed01",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "num" : 13,
+                  "note" : "Код вида деятельности",
+                  "name" : "zfi_cf015",
+                  "domainId" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+                  "visible" : true,
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refTabKey" : "b81e2676-b317-4415-988a-5a7f11d1fcae"
+                },
+                "7091c758-7909-4453-bb85-151b4d242029" : {
+                  "id" : "7091c758-7909-4453-bb85-151b4d242029",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "num" : 14,
+                  "note" : "Код ПФМ",
+                  "name" : "fistl",
+                  "domainId" : "65197d49-9508-4d28-9850-d56bc534438a",
+                  "visible" : true,
+                  "refTabId" : "dd6733e3-a69a-4900-ad41-d829f5c9b4f1",
+                  "refTabKey" : "b05dec2a-394f-4f60-8e67-d8b277b71ffd"
+                },
+                "9dc4baba-42a8-4d0c-86f4-848b826d9ac1" : {
+                  "id" : "9dc4baba-42a8-4d0c-86f4-848b826d9ac1",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "num" : 15,
+                  "note" : "Код финансовой позиции",
+                  "name" : "fipos",
+                  "domainId" : "b39de70c-eefd-4159-a8df-8969ab2fcd5e",
+                  "visible" : true,
+                  "refTabId" : "616f4c5e-43d2-4e22-a4b4-64172a5bfa97",
+                  "refTabKey" : "4e532ca1-d54e-46d3-bff8-aa890154fb6f"
+                },
+                "26afa408-a18d-4a0d-8021-6403e2f78ff0" : {
+                  "id" : "26afa408-a18d-4a0d-8021-6403e2f78ff0",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "num" : 16,
+                  "note" : "Код ставки НДС",
+                  "name" : "zvat_rate",
+                  "domainId" : "2003b72b-ea8f-4881-ab4f-0d4a907b88e0",
+                  "visible" : true,
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refTabKey" : "d913bcca-440f-401b-a4e4-94d29230f97b"
+                }
+              },
+              "foreignKeys" : {
+                "ba5e7ff1-209e-4518-892e-d5c0c745b22c" : {
+                  "id" : "ba5e7ff1-209e-4518-892e-d5c0c745b22c",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_rldnr_fkey",
+                  "inheritedId" : "473f8fd1-cd4b-420b-82e9-e9e6510d68ab"
+                },
+                "14c53bc0-461f-45e3-b1fe-b1fc323e446c" : {
+                  "id" : "14c53bc0-461f-45e3-b1fe-b1fc323e446c",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_bukrs_fkey",
+                  "inheritedId" : "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad"
+                },
+                "affe0e75-0880-4d96-a78d-99042b622d2b" : {
+                  "id" : "affe0e75-0880-4d96-a78d-99042b622d2b",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_drcrk_fkey",
+                  "inheritedId" : "49969341-fe6d-4e2b-990b-26402cc928cf"
+                },
+                "a8de7e6d-559c-43c2-9d82-201932ccc646" : {
+                  "id" : "a8de7e6d-559c-43c2-9d82-201932ccc646",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_racct_fkey",
+                  "inheritedId" : "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79"
+                },
+                "809ff7c6-97ab-4ea6-bf49-afa9aaa7a5d2" : {
+                  "id" : "809ff7c6-97ab-4ea6-bf49-afa9aaa7a5d2",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_blart_fkey",
+                  "inheritedId" : "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b"
+                },
+                "9d4e00fd-5110-46d0-9cba-376130670712" : {
+                  "id" : "9d4e00fd-5110-46d0-9cba-376130670712",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_rhcur_fkey",
+                  "inheritedId" : "7ecaa410-abfe-41aa-bff8-52182072523c"
+                },
+                "f589a4b8-e7e1-4f31-87a7-cc866aab1470" : {
+                  "id" : "f589a4b8-e7e1-4f31-87a7-cc866aab1470",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_zfi_cf015_fkey",
+                  "columns" : [ "f436cb00-cbc5-44d7-ac54-940498dbed01" ],
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refColumns" : [ "b81e2676-b317-4415-988a-5a7f11d1fcae" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "3065ecd6-027b-49dd-b897-46f7de6fb0fe" : {
+                  "id" : "3065ecd6-027b-49dd-b897-46f7de6fb0fe",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_fistl_fkey",
+                  "columns" : [ "7091c758-7909-4453-bb85-151b4d242029" ],
+                  "refTabId" : "dd6733e3-a69a-4900-ad41-d829f5c9b4f1",
+                  "refColumns" : [ "b05dec2a-394f-4f60-8e67-d8b277b71ffd" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "0ace792e-22da-4315-954a-2773f2991a8a" : {
+                  "id" : "0ace792e-22da-4315-954a-2773f2991a8a",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_fipos_fkey",
+                  "columns" : [ "9dc4baba-42a8-4d0c-86f4-848b826d9ac1" ],
+                  "refTabId" : "616f4c5e-43d2-4e22-a4b4-64172a5bfa97",
+                  "refColumns" : [ "4e532ca1-d54e-46d3-bff8-aa890154fb6f" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "e2a6b4fd-dea2-44e4-b501-977cd9b48753" : {
+                  "id" : "e2a6b4fd-dea2-44e4-b501-977cd9b48753",
+                  "tabId" : "4aa08af7-16a3-4661-8409-33be4a60e8d5",
+                  "name" : "entry5100000201_1_zvat_rate_fkey",
+                  "columns" : [ "26afa408-a18d-4a0d-8021-6403e2f78ff0" ],
+                  "refTabId" : "638db134-8277-4ccd-998c-92a7c27f882d",
+                  "refColumns" : [ "d913bcca-440f-401b-a4e4-94d29230f97b" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          },
+          "versioning" : true
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "e30a2f63-ecd6-4245-a0c5-e6ceb23db0cf",
+          "mode" : "PRIMARY"
+        }
+      },
+      "versioning" : true
+    },
+    "d11fd068-9243-45da-a427-8afde46fa9ee" : {
+      "id" : "d11fd068-9243-45da-a427-8afde46fa9ee",
+      "inheritedId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+      "name" : "Entry3500340000",
+      "note" : "Проводки счет 3500340000",
+      "structures" : {
+        "fe777ae2-9b77-498e-a3f4-80e0400af824" : {
+          "id" : "fe777ae2-9b77-498e-a3f4-80e0400af824",
+          "boId" : "d11fd068-9243-45da-a427-8afde46fa9ee",
+          "inheritedId" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+          "name" : "Entry3500340000",
+          "tables" : {
+            "7a549e79-7389-4253-b00d-302fb56c5c78" : {
+              "id" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+              "structureId" : "fe777ae2-9b77-498e-a3f4-80e0400af824",
+              "boId" : "d11fd068-9243-45da-a427-8afde46fa9ee",
+              "name" : "entry3500340000_1",
+              "note" : "Проводки счет 3500340000",
+              "tabType" : "Common",
+              "version" : 1,
+              "pkey" : {
+                "name" : "entry3500340000_1_pkey",
+                "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa"
+              },
+              "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "7122dfd9-d536-440e-a16e-c59e5fe5d437" : {
+                  "id" : "7122dfd9-d536-440e-a16e-c59e5fe5d437",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "num" : 13,
+                  "note" : "Код вида деятельности",
+                  "name" : "zfi_cf015",
+                  "domainId" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+                  "visible" : true,
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refTabKey" : "b81e2676-b317-4415-988a-5a7f11d1fcae"
+                },
+                "f613a92d-7be0-4ec3-b63f-6b18016f02c1" : {
+                  "id" : "f613a92d-7be0-4ec3-b63f-6b18016f02c1",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "num" : 14,
+                  "note" : "Код объекта учета затрат (ОУЗ)",
+                  "name" : "kostl",
+                  "domainId" : "0c58f156-73a2-4c34-8333-c758f97ec8fd",
+                  "visible" : true,
+                  "refTabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "refTabKey" : "11c64595-4734-44b4-8967-444d3b05e723"
+                }
+              },
+              "foreignKeys" : {
+                "5fc6b6d6-f9cb-4355-a0f2-f58ecfdba50b" : {
+                  "id" : "5fc6b6d6-f9cb-4355-a0f2-f58ecfdba50b",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_rldnr_fkey",
+                  "inheritedId" : "473f8fd1-cd4b-420b-82e9-e9e6510d68ab"
+                },
+                "c0bedb1a-ed69-44f1-8f4f-8b03bb9d2550" : {
+                  "id" : "c0bedb1a-ed69-44f1-8f4f-8b03bb9d2550",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_bukrs_fkey",
+                  "inheritedId" : "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad"
+                },
+                "dccf7c93-f033-43d8-a822-ff3d998fb359" : {
+                  "id" : "dccf7c93-f033-43d8-a822-ff3d998fb359",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_drcrk_fkey",
+                  "inheritedId" : "49969341-fe6d-4e2b-990b-26402cc928cf"
+                },
+                "ef191fe8-aad4-483b-ab79-35030388844d" : {
+                  "id" : "ef191fe8-aad4-483b-ab79-35030388844d",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_racct_fkey",
+                  "inheritedId" : "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79"
+                },
+                "e5465079-0e62-4c11-9cf4-ce415f04683b" : {
+                  "id" : "e5465079-0e62-4c11-9cf4-ce415f04683b",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_blart_fkey",
+                  "inheritedId" : "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b"
+                },
+                "059840fa-a1d9-40c2-9373-ab540ed77964" : {
+                  "id" : "059840fa-a1d9-40c2-9373-ab540ed77964",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_rhcur_fkey",
+                  "inheritedId" : "7ecaa410-abfe-41aa-bff8-52182072523c"
+                },
+                "aa53910b-6b90-4243-8eaf-417bcebd672e" : {
+                  "id" : "aa53910b-6b90-4243-8eaf-417bcebd672e",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_zfi_cf015_fkey",
+                  "columns" : [ "7122dfd9-d536-440e-a16e-c59e5fe5d437" ],
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refColumns" : [ "b81e2676-b317-4415-988a-5a7f11d1fcae" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "7da89b39-e071-4f98-8ac9-ac02eeb30255" : {
+                  "id" : "7da89b39-e071-4f98-8ac9-ac02eeb30255",
+                  "tabId" : "7a549e79-7389-4253-b00d-302fb56c5c78",
+                  "name" : "entry3500340000_1_kostl_fkey",
+                  "columns" : [ "f613a92d-7be0-4ec3-b63f-6b18016f02c1" ],
+                  "refTabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "refColumns" : [ "11c64595-4734-44b4-8967-444d3b05e723" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          },
+          "versioning" : true
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "d11fd068-9243-45da-a427-8afde46fa9ee",
+          "mode" : "PRIMARY"
+        }
+      },
+      "versioning" : true
+    },
+    "c3cfd480-2d26-4163-acce-d920c76f2a91" : {
+      "id" : "c3cfd480-2d26-4163-acce-d920c76f2a91",
+      "inheritedId" : "d646abf3-9227-42a5-aa16-b472de3d9180",
+      "name" : "Entry3500100000",
+      "note" : "Проводки счет 3500100000",
+      "structures" : {
+        "63ca3c2a-56a5-4050-98a2-0c2412a01aff" : {
+          "id" : "63ca3c2a-56a5-4050-98a2-0c2412a01aff",
+          "boId" : "c3cfd480-2d26-4163-acce-d920c76f2a91",
+          "inheritedId" : "b39e6642-ff0b-442e-aa25-5b0ee8f7bf0d",
+          "name" : "Entry3500100000",
+          "tables" : {
+            "d0e702e4-a14b-406d-81ea-e9ba9b10def0" : {
+              "id" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+              "structureId" : "63ca3c2a-56a5-4050-98a2-0c2412a01aff",
+              "boId" : "c3cfd480-2d26-4163-acce-d920c76f2a91",
+              "name" : "entry3500100000_1",
+              "note" : "Проводки счет 3500100000",
+              "tabType" : "Common",
+              "version" : 1,
+              "pkey" : {
+                "name" : "entry3500100000_1_pkey",
+                "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa"
+              },
+              "inheritedId" : "7259acd0-64b8-4347-a951-acfdb51e1baa",
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "3aefb365-fb06-4b2c-8d5b-15a6c6a8bc2a" : {
+                  "id" : "3aefb365-fb06-4b2c-8d5b-15a6c6a8bc2a",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "num" : 13,
+                  "note" : "Код вида деятельности",
+                  "name" : "zfi_cf015",
+                  "domainId" : "bfef9824-193e-410e-8485-2e2083b4ab0d",
+                  "visible" : true,
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refTabKey" : "b81e2676-b317-4415-988a-5a7f11d1fcae"
+                },
+                "e9a28317-f94d-4a76-b4b2-d5a92766aa72" : {
+                  "id" : "e9a28317-f94d-4a76-b4b2-d5a92766aa72",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "num" : 14,
+                  "note" : "Код объекта учета затрат (ОУЗ)",
+                  "name" : "kostl",
+                  "domainId" : "0c58f156-73a2-4c34-8333-c758f97ec8fd",
+                  "visible" : true,
+                  "refTabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "refTabKey" : "11c64595-4734-44b4-8967-444d3b05e723"
+                }
+              },
+              "foreignKeys" : {
+                "d9636cfb-b4f3-4ed3-8bf9-da15be181909" : {
+                  "id" : "d9636cfb-b4f3-4ed3-8bf9-da15be181909",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_rldnr_fkey",
+                  "inheritedId" : "473f8fd1-cd4b-420b-82e9-e9e6510d68ab"
+                },
+                "6f982692-64e6-4706-a74c-e548afe8ba8b" : {
+                  "id" : "6f982692-64e6-4706-a74c-e548afe8ba8b",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_bukrs_fkey",
+                  "inheritedId" : "11b35fa3-24cc-4ddf-8b5d-5054d8bb9dad"
+                },
+                "f39f9ab3-3e0e-4399-be1f-26a906708e72" : {
+                  "id" : "f39f9ab3-3e0e-4399-be1f-26a906708e72",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_drcrk_fkey",
+                  "inheritedId" : "49969341-fe6d-4e2b-990b-26402cc928cf"
+                },
+                "d1f28424-eaf4-484f-ac3e-8952fbc58250" : {
+                  "id" : "d1f28424-eaf4-484f-ac3e-8952fbc58250",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_racct_fkey",
+                  "inheritedId" : "cb7fad1d-c8bc-450d-8bc3-952f6eb59e79"
+                },
+                "71af8806-ed14-42b6-9253-70b37e32a582" : {
+                  "id" : "71af8806-ed14-42b6-9253-70b37e32a582",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_blart_fkey",
+                  "inheritedId" : "62ceb80b-b3b3-4ad5-82d6-baa26fdbc97b"
+                },
+                "861e9d68-db3a-40ab-9697-df5b22091ccb" : {
+                  "id" : "861e9d68-db3a-40ab-9697-df5b22091ccb",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_rhcur_fkey",
+                  "inheritedId" : "7ecaa410-abfe-41aa-bff8-52182072523c"
+                },
+                "014c4d5f-03d5-4c65-8487-5a85363d5702" : {
+                  "id" : "014c4d5f-03d5-4c65-8487-5a85363d5702",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_zfi_cf015_fkey",
+                  "columns" : [ "3aefb365-fb06-4b2c-8d5b-15a6c6a8bc2a" ],
+                  "refTabId" : "70598336-2705-4c06-943b-1d8b6f7aaae8",
+                  "refColumns" : [ "b81e2676-b317-4415-988a-5a7f11d1fcae" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "d5d857d4-3bbb-44b3-afcc-1913101a9858" : {
+                  "id" : "d5d857d4-3bbb-44b3-afcc-1913101a9858",
+                  "tabId" : "d0e702e4-a14b-406d-81ea-e9ba9b10def0",
+                  "name" : "entry3500100000_1_kostl_fkey",
+                  "columns" : [ "e9a28317-f94d-4a76-b4b2-d5a92766aa72" ],
+                  "refTabId" : "21da46d5-5970-456b-8cc6-b8555a4dad3d",
+                  "refColumns" : [ "11c64595-4734-44b4-8967-444d3b05e723" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          },
+          "versioning" : true
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "c3cfd480-2d26-4163-acce-d920c76f2a91",
+          "mode" : "PRIMARY"
+        }
+      },
+      "versioning" : true
+    },
+    "61da1cac-4f23-467e-8ab5-7a7433fd2f36" : {
+      "id" : "61da1cac-4f23-467e-8ab5-7a7433fd2f36",
+      "name" : "CorrItem",
+      "note" : "Позиции строк корреспонденции счетов",
+      "structures" : {
+        "d3b851a8-0252-4b83-a715-f12a885f51f0" : {
+          "id" : "d3b851a8-0252-4b83-a715-f12a885f51f0",
+          "boId" : "61da1cac-4f23-467e-8ab5-7a7433fd2f36",
+          "name" : "CorrItem",
+          "tables" : {
+            "73d2c9b5-5576-4e26-833d-681d2be4f9cf" : {
+              "id" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+              "structureId" : "d3b851a8-0252-4b83-a715-f12a885f51f0",
+              "boId" : "61da1cac-4f23-467e-8ab5-7a7433fd2f36",
+              "name" : "corr_item",
+              "note" : "Позиции строк корреспонденции счетов",
+              "tabType" : "Common",
+              "deployStrategy" : "ALONE",
+              "histMode" : "DISABLE",
+              "columns" : {
+                "5066dec4-4f81-4003-8acd-a3d3abef039d" : {
+                  "id" : "5066dec4-4f81-4003-8acd-a3d3abef039d",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 1,
+                  "note" : "Код балансовой единицы",
+                  "name" : "bukrs",
+                  "domainId" : "f696324f-9e19-4577-99db-f6acbbeb3f43",
+                  "visible" : true,
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refTabKey" : "652dd9aa-1b46-44ed-bf1a-f05a8d521f78"
+                },
+                "94010e58-aac3-4551-8320-745a39f613af" : {
+                  "id" : "94010e58-aac3-4551-8320-745a39f613af",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 2,
+                  "note" : "Номер документа",
+                  "name" : "belnr",
+                  "domainId" : "69efd89f-2fed-469b-8ec2-26fdf834173d",
+                  "visible" : true
+                },
+                "f480b3d5-6730-49dc-b955-6a20ddc374e2" : {
+                  "id" : "f480b3d5-6730-49dc-b955-6a20ddc374e2",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 3,
+                  "note" : "Год",
+                  "name" : "gjahr",
+                  "domainId" : "94ae5f30-0f84-4577-b64e-54059668c2ab",
+                  "visible" : true
+                },
+                "71821e5a-7d31-4f02-9cb7-ca46746df75b" : {
+                  "id" : "71821e5a-7d31-4f02-9cb7-ca46746df75b",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 4,
+                  "note" : "Номер отдельной позиции (дебет)",
+                  "name" : "buzeid",
+                  "domainId" : "99e0ba9f-edad-48d4-8011-2128d9b5e6b4",
+                  "visible" : true
+                },
+                "7d53178c-e7a2-49bb-9501-3c49595d9d02" : {
+                  "id" : "7d53178c-e7a2-49bb-9501-3c49595d9d02",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 5,
+                  "note" : "Номер отдельной позиции (кредит)",
+                  "name" : "buzeik",
+                  "domainId" : "99e0ba9f-edad-48d4-8011-2128d9b5e6b4",
+                  "visible" : true
+                },
+                "c853391b-52e9-4571-a6b4-ebdf2f703ac9" : {
+                  "id" : "c853391b-52e9-4571-a6b4-ebdf2f703ac9",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 6,
+                  "note" : "Номер позиции для новых позиций (дебет)",
+                  "name" : "addd",
+                  "domainId" : "1e15be45-583c-4a4d-9506-85349230f723",
+                  "visible" : true
+                },
+                "850de077-cc6c-4bd5-9792-419dc056b5d6" : {
+                  "id" : "850de077-cc6c-4bd5-9792-419dc056b5d6",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 7,
+                  "note" : "Номер позиции для новых позиций (кредит)",
+                  "name" : "addk",
+                  "domainId" : "fc25a840-85ae-4e23-8f28-cc4aa3eb0922",
+                  "visible" : true
+                },
+                "fe938e74-c027-4cdf-a60c-867a38893801" : {
+                  "id" : "fe938e74-c027-4cdf-a60c-867a38893801",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 8,
+                  "note" : "Номер позиции из разделенной статьи (дебет)",
+                  "name" : "npddi",
+                  "domainId" : "1f1b8a03-07f2-4cc6-b9c5-144608d9e3fd",
+                  "visible" : true
+                },
+                "06787a66-ed93-4355-9b41-7175143a2b4d" : {
+                  "id" : "06787a66-ed93-4355-9b41-7175143a2b4d",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 9,
+                  "note" : "Номер позиции из разделенной статьи (кредит)",
+                  "name" : "npdki",
+                  "domainId" : "3695ed93-e64d-4daa-b47c-45ac1bd77eed",
+                  "visible" : true
+                },
+                "dfeba3bd-7c0d-41bc-8c83-e147b2116b48" : {
+                  "id" : "dfeba3bd-7c0d-41bc-8c83-e147b2116b48",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 10,
+                  "note" : "Счет дебетования",
+                  "name" : "debet",
+                  "domainId" : "301f3bd3-f553-496a-865e-fe0ee438084e",
+                  "visible" : true,
+                  "refTabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "refTabKey" : "44994d7a-5539-429d-a6ff-2688b8262653"
+                },
+                "fa946c16-7e90-465e-8e61-45b6df811783" : {
+                  "id" : "fa946c16-7e90-465e-8e61-45b6df811783",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 11,
+                  "note" : "Индикатор: красное сторно",
+                  "name" : "xnegpd",
+                  "domainId" : "b4cdcaf2-73c1-4a95-9158-9537df4d286b",
+                  "visible" : true
+                },
+                "8a44d6f1-3ba9-4075-8082-207d93c0e84b" : {
+                  "id" : "8a44d6f1-3ba9-4075-8082-207d93c0e84b",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 12,
+                  "note" : "Кредитовый счет",
+                  "name" : "kredit",
+                  "domainId" : "301f3bd3-f553-496a-865e-fe0ee438084e",
+                  "visible" : true,
+                  "refTabId" : "22326c5f-a2b5-45c7-bb91-1af61b1540b8",
+                  "refTabKey" : "44994d7a-5539-429d-a6ff-2688b8262653"
+                },
+                "87e0cf17-7a58-41d7-af10-c994ea410ced" : {
+                  "id" : "87e0cf17-7a58-41d7-af10-c994ea410ced",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 13,
+                  "note" : "Индикатор: красное сторно",
+                  "name" : "xnegpk",
+                  "domainId" : "7008e7d9-d99a-45c3-9aed-609d625d792c",
+                  "visible" : true
+                },
+                "1d2b235b-142c-474e-8991-dd2a75ecdb18" : {
+                  "id" : "1d2b235b-142c-474e-8991-dd2a75ecdb18",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 14,
+                  "note" : "Сумма во внутренней валюте",
+                  "name" : "dmbtr",
+                  "domainId" : "ae8f7d28-eb7c-40ab-be12-9118281006bd",
+                  "visible" : true
+                },
+                "a74ac921-ef2b-4635-9dfb-bf8cb41527ba" : {
+                  "id" : "a74ac921-ef2b-4635-9dfb-bf8cb41527ba",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 15,
+                  "note" : "Внутренняя валюта",
+                  "name" : "hwaer",
+                  "domainId" : "34e6c37f-74ac-44f1-b2bb-d65f53f72a48",
+                  "visible" : true,
+                  "refTabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "refTabKey" : "d4f0380f-d2f7-45cc-8aa2-0382fc48912e"
+                },
+                "02a6e6f9-4471-4af2-bbda-b1f72d9a6cc6" : {
+                  "id" : "02a6e6f9-4471-4af2-bbda-b1f72d9a6cc6",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 16,
+                  "note" : "Сумма в валюте документа",
+                  "name" : "wrbtr",
+                  "domainId" : "ae8f7d28-eb7c-40ab-be12-9118281006bd",
+                  "visible" : true
+                },
+                "fd965a9f-698b-4f70-aa75-77c091a9d666" : {
+                  "id" : "fd965a9f-698b-4f70-aa75-77c091a9d666",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 17,
+                  "note" : "Код валюты",
+                  "name" : "waers",
+                  "domainId" : "34e6c37f-74ac-44f1-b2bb-d65f53f72a48",
+                  "visible" : true,
+                  "refTabId" : "81f97a69-a7a7-4718-b758-7710226335df",
+                  "refTabKey" : "d4f0380f-d2f7-45cc-8aa2-0382fc48912e"
+                },
+                "ea532eb9-d516-4e26-8a2b-b8907f27597d" : {
+                  "id" : "ea532eb9-d516-4e26-8a2b-b8907f27597d",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 18,
+                  "note" : "Строка проводки по регистру, 6 знаков",
+                  "name" : "doclnd",
+                  "domainId" : "44789d96-c654-4481-a7da-2e3dbedf6b75",
+                  "visible" : true
+                },
+                "9ad30713-eb2a-4f91-9d36-a1f9a2176841" : {
+                  "id" : "9ad30713-eb2a-4f91-9d36-a1f9a2176841",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 19,
+                  "note" : "Строка проводки по регистру, 6 знаков",
+                  "name" : "doclnk",
+                  "domainId" : "44789d96-c654-4481-a7da-2e3dbedf6b75",
+                  "visible" : true
+                },
+                "5eedf6f3-1a90-44a7-a190-f1d5424b7f34" : {
+                  "id" : "5eedf6f3-1a90-44a7-a190-f1d5424b7f34",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "num" : 20,
+                  "note" : "Код регистра",
+                  "name" : "rldnr",
+                  "domainId" : "00f52444-280e-4664-8eb1-cef347296c75",
+                  "visible" : true,
+                  "refTabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "refTabKey" : "753798d9-45df-483b-ba34-b35c522d9c48"
+                }
+              },
+              "foreignKeys" : {
+                "65efd24f-2324-40cb-a02d-dfd54a3f032a" : {
+                  "id" : "65efd24f-2324-40cb-a02d-dfd54a3f032a",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "name" : "corr_item_bukrs_fkey",
+                  "columns" : [ "5066dec4-4f81-4003-8acd-a3d3abef039d" ],
+                  "refTabId" : "4ad0e467-530a-421d-b947-a88072deaf5c",
+                  "refColumns" : [ "652dd9aa-1b46-44ed-bf1a-f05a8d521f78" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                },
+                "387cb05f-16dd-4736-a195-a777230d057a" : {
+                  "id" : "387cb05f-16dd-4736-a195-a777230d057a",
+                  "tabId" : "73d2c9b5-5576-4e26-833d-681d2be4f9cf",
+                  "name" : "corr_item_rldnr_fkey",
+                  "columns" : [ "5eedf6f3-1a90-44a7-a190-f1d5424b7f34" ],
+                  "refTabId" : "7e00576d-4945-4553-b1fa-e7e5513946e7",
+                  "refColumns" : [ "753798d9-45df-483b-ba34-b35c522d9c48" ],
+                  "match" : "SIMPLE",
+                  "onUpdate" : "NO_ACTION",
+                  "onDelete" : "NO_ACTION"
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploys" : {
+        "790439f2-1fa9-4bda-860c-fa539691adaf" : {
+          "dsId" : "790439f2-1fa9-4bda-860c-fa539691adaf",
+          "boId" : "61da1cac-4f23-467e-8ab5-7a7433fd2f36",
+          "mode" : "PRIMARY"
+        }
+      }
+    }
+  },
+  "displayNames" : {
+    "8ed16506-a74c-4b05-934a-21d55ddee316" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Целое в небольшом диапазоне"
+      }
+    },
+    "7e468de6-0e7d-4183-8da3-b656ac917fa8" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Целое"
+      }
+    },
+    "269f6ebc-1fd0-4a8b-8437-27ad5380d7fc" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Автогенератор ключа INTEGER"
+      }
+    },
+    "b7b1898e-bba5-439b-8d07-7e89205ae460" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Целое в большом диапазоне"
+      }
+    },
+    "1cdd8744-f119-457d-9b7e-1278064fea44" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Автогенератор ключа BIGINT"
+      }
+    },
+    "b3992ca2-ba07-44e9-9eca-acba063855ee" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Десятичный тип данных с высокой точностью"
+      }
+    },
+    "715eba66-66b5-4b0b-9668-9ca6f0be4004" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Вещественное число с переменной точностью"
+      }
+    },
+    "4d239885-917c-48c5-9157-eede8e23d96a" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Логический тип"
+      }
+    },
+    "797d3d77-6221-4350-80fa-8010b991e1d1" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Универсальный уникальный идентификатор"
+      }
+    },
+    "4a5b6df8-0c8f-4998-baf4-eedba2e52b64" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Автогенератор ключа UUID"
+      }
+    },
+    "5df27c95-f6d6-4ec0-b593-37fa6af6f59d" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Строка неограниченной переменной длины"
+      }
+    },
+    "beab3693-cd32-42f7-98e7-cfc60998afa5" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Строка в один символ"
+      }
+    },
+    "6626a499-e90c-47ac-8889-695d77338803" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата (без времени суток)"
+      }
+    },
+    "ed06ba09-a09e-4a4b-b12d-f019d1916627" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата и время (без часового пояса) точность до секунды"
+      }
+    },
+    "f7ca17a2-f974-4f11-a3ae-23e840ed6707" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата и время (без часового пояса)"
+      }
+    },
+    "54d10bcb-f5e7-4a9c-9231-bef063eb2559" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата и время (без часового пояса)"
+      }
+    },
+    "5c9c224f-b17b-4ac2-ae67-e0f3e3888ca6" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата и время (без часового пояса)"
+      }
+    },
+    "4c2e27ff-7424-43fa-bad7-843b594bbc0e" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата и время (без часового пояса)"
+      }
+    },
+    "b35ea4aa-ac82-4f77-88b5-fbde89be7b1f" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата и время (без часового пояса)"
+      }
+    },
+    "4a6ea286-049b-4b62-91e1-7d1a34697aba" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата и время (без часового пояса)"
+      }
+    },
+    "2cc70c4b-d7ab-4e25-9f97-ed1b5b9422d7" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Системные языки"
+      }
+    },
+    "af03e72b-fbca-456c-b0d8-f34e00978176" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Ключ языка"
+      }
+    },
+    "b5cd2054-bb57-4e7e-a66d-0bd4a39ab70b" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "id"
+      }
+    },
+    "96df3675-27be-479e-9721-2dc87e72a35b" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "name"
+      }
+    },
+    "79bfe1f3-f411-4e8f-a856-11fcf4faa96a" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Пользователи"
+      }
+    },
+    "3ab23f79-e2d7-4a1e-a14f-2240e936c3d5" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "id"
+      }
+    },
+    "b0fd1e3b-afe0-4129-85b8-d7bd4c25418a" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "name"
+      }
+    },
+    "0f8e243a-bc8d-4b12-85da-8128eec6b9a1" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Наименование"
+      }
+    },
+    "adce9dd5-1bab-41a0-b2f1-a0aa9c40753b" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Сумма"
+      }
+    },
+    "ae8f7d28-eb7c-40ab-be12-9118281006bd" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Сумма документа"
+      }
+    },
+    "2f0f7147-f0be-4cb3-bca0-c0d6a7b2ee25" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата"
+      }
+    },
+    "94ae5f30-0f84-4577-b64e-54059668c2ab" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Год"
+      }
+    },
+    "69efd89f-2fed-469b-8ec2-26fdf834173d" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ФД"
+      }
+    },
+    "44789d96-c654-4481-a7da-2e3dbedf6b75" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ПФД"
+      }
+    },
+    "1be01674-5c66-4384-b5d9-d363656b052f" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Дата док."
+      }
+    },
+    "9908eb5e-74ae-4a49-a1ae-658d8e3f0d55" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Валюта"
+      }
+    },
+    "34e6c37f-74ac-44f1-b2bb-d65f53f72a48" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ВАЛ"
+      }
+    },
+    "ed034d62-7531-4de5-b9a1-88e43183aee3" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "План счетов"
+      }
+    },
+    "dfdd0c20-8113-45f8-a93b-d7dae15a8fa2" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ПСЧ"
+      }
+    },
+    "9da6bd8a-f2c7-46c2-b948-1e992ddf4a13" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Балансовая единица"
+      }
+    },
+    "f696324f-9e19-4577-99db-f6acbbeb3f43" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "БЕ"
+      }
+    },
+    "dc48fac8-a19a-4494-a537-a0745bc4e6d7" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Счет"
+      }
+    },
+    "301f3bd3-f553-496a-865e-fe0ee438084e" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "СЧ"
+      }
+    },
+    "28d5f6be-42cd-4336-a20d-d4cffddf8024" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "boname"
+      }
+    },
+    "21e20a6d-c3d8-4d19-9004-cd103b8e9a5f" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Мэппинг счета и плана счетов"
+      }
+    },
+    "8c9df262-8b0c-4f2e-846a-45ccb3e181a6" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Вид документа"
+      }
+    },
+    "eaa85b74-7139-4a15-8512-363dfc70f7b8" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ВД"
+      }
+    },
+    "1f5e7807-b370-453c-9010-2500e7da79d3" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Контрагент"
+      }
+    },
+    "2ea85d48-5596-4569-9070-47c6925025fb" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ДК"
+      }
+    },
+    "05a37049-8d28-40cc-9720-6e61919dc16f" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Договор"
+      }
+    },
+    "96db78c6-29dd-49cc-aef3-2d4e9b94a008" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ДОГ"
+      }
+    },
+    "22a3fe5e-d048-417c-82a7-f687754ddb90" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "zuonr_int_number"
+      }
+    },
+    "9d74ceb9-1b82-4280-9f6d-b10521b81f13" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Ставка НДС"
+      }
+    },
+    "2003b72b-ea8f-4881-ab4f-0d4a907b88e0" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "НДС"
+      }
+    },
+    "2c570c82-6739-42f0-8fbd-c691b95ddaa0" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "zvat_text"
+      }
+    },
+    "99872bbe-6860-462b-a3c9-f144932c0a00" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Коды налогов"
+      }
+    },
+    "b6d325b2-2ace-4fa1-bdc9-655de345e332" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "НЛГ"
+      }
+    },
+    "1f2c6366-351a-4eb5-b90d-47737dadf79f" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "text1"
+      }
+    },
+    "78e1946a-1464-41ff-b8cf-cc98d5daba8d" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Службы/ПФМ"
+      }
+    },
+    "65197d49-9508-4d28-9850-d56bc534438a" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ПФМ"
+      }
+    },
+    "f01d65d6-becf-4478-a32c-322a54e88d45" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "n_fistl"
+      }
+    },
+    "db682572-b6b7-4cab-866b-34bf85db70ef" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Финансовые позиции"
+      }
+    },
+    "b39de70c-eefd-4159-a8df-8969ab2fcd5e" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ФП"
+      }
+    },
+    "93c904eb-7fde-4f86-962c-f81d838b89a5" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "n_fipos"
+      }
+    },
+    "7b9b6d1d-6fc2-41fc-9822-a1f3bcd9f19b" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "gjahr"
+      }
+    },
+    "ce587913-1222-4919-936c-f7e19ecf2d11" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Объект учета затрат"
+      }
+    },
+    "0c58f156-73a2-4c34-8333-c758f97ec8fd" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ОУЗ"
+      }
+    },
+    "c57f50ae-363c-454f-b78b-7647a4b8f0a8" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ktext"
+      }
+    },
+    "cfb3986f-68f3-40ad-bf33-bdc9fdb436ea" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Вид деятельности"
+      }
+    },
+    "bfef9824-193e-410e-8485-2e2083b4ab0d" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ВД"
+      }
+    },
+    "4eaa3ca1-7b33-4985-a7f2-efd410e32526" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "n_zfi_cf015"
+      }
+    },
+    "f10e90a4-3865-4481-bbea-a3114173dbfe" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Регистр"
+      }
+    },
+    "00f52444-280e-4664-8eb1-cef347296c75" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "РЕГ"
+      }
+    },
+    "95e0918d-1a0e-466b-b092-23a240bc6c1f" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Группа регистров"
+      }
+    },
+    "1940c283-9685-42e4-b622-cf6be84fb4da" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ГР"
+      }
+    },
+    "4564a496-2b66-476c-a703-bcac21f33e4c" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Мэппинг групп регистра и регистров с БЕ"
+      }
+    },
+    "e363a724-29a6-4ef4-87b2-31af80f720f2" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Тип проводки"
+      }
+    },
+    "4c08860e-6b96-49b4-9281-b202cfdde0a8" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Д/К"
+      }
+    },
+    "d646abf3-9227-42a5-aa16-b472de3d9180" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Бухгалтерская проводка"
+      }
+    },
+    "99e0ba9f-edad-48d4-8011-2128d9b5e6b4" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "НОП"
+      }
+    },
+    "b23dee1f-6816-450f-85ae-5079d1c066d6" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Проводки счет 6001020000"
+      }
+    },
+    "fc1ececa-082e-4ade-a2ac-9d6e143ba5a5" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Проводки счет 6002000000"
+      }
+    },
+    "2b74f472-310e-4188-8416-71c904425983" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Проводки счет 1904010000"
+      }
+    },
+    "e30a2f63-ecd6-4245-a0c5-e6ceb23db0cf" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Проводки счет 5100000201"
+      }
+    },
+    "d11fd068-9243-45da-a427-8afde46fa9ee" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Проводки счет 3500340000"
+      }
+    },
+    "c3cfd480-2d26-4163-acce-d920c76f2a91" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Проводки счет 3500100000"
+      }
+    },
+    "61da1cac-4f23-467e-8ab5-7a7433fd2f36" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "Позиции строк корреспонденции счетов"
+      }
+    },
+    "71821e5a-7d31-4f02-9cb7-ca46746df75b" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "buzeid"
+      }
+    },
+    "7d53178c-e7a2-49bb-9501-3c49595d9d02" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "buzeik"
+      }
+    },
+    "1e15be45-583c-4a4d-9506-85349230f723" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "НПНПД"
+      }
+    },
+    "fc25a840-85ae-4e23-8f28-cc4aa3eb0922" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "НПНПК"
+      }
+    },
+    "1f1b8a03-07f2-4cc6-b9c5-144608d9e3fd" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "НПРСД"
+      }
+    },
+    "3695ed93-e64d-4daa-b47c-45ac1bd77eed" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "НПРСК"
+      }
+    },
+    "dfeba3bd-7c0d-41bc-8c83-e147b2116b48" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "debet"
+      }
+    },
+    "b4cdcaf2-73c1-4a95-9158-9537df4d286b" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ИД:КС"
+      }
+    },
+    "8a44d6f1-3ba9-4075-8082-207d93c0e84b" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "kredit"
+      }
+    },
+    "7008e7d9-d99a-45c3-9aed-609d625d792c" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "ИК:КС"
+      }
+    },
+    "1d2b235b-142c-474e-8991-dd2a75ecdb18" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "dmbtr"
+      }
+    },
+    "a74ac921-ef2b-4635-9dfb-bf8cb41527ba" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "hwaer"
+      }
+    },
+    "02a6e6f9-4471-4af2-bbda-b1f72d9a6cc6" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "wrbtr"
+      }
+    },
+    "fd965a9f-698b-4f70-aa75-77c091a9d666" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "waers"
+      }
+    },
+    "ea532eb9-d516-4e26-8a2b-b8907f27597d" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "doclnd"
+      }
+    },
+    "9ad30713-eb2a-4f91-9d36-a1f9a2176841" : {
+      "lang" : "ru",
+      "values" : {
+        "ru" : "doclnk"
+      }
+    }
+  }
+}
